@@ -15,3 +15,11 @@
 ## Frame Registro
 
 ![Texto alternativo](https://i.ibb.co/bFcXY77/registro.png)
+
+## Frame Cambio de contraseña 1
+
+![Texto alternativo](https://i.ibb.co/HzT95Bh/contrase-a1.png)
+
+## Frame Cambio de contraseña 2
+
+![Texto alternativo](https://i.ibb.co/tsNjhV4/contrase-a2.png)
