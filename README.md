@@ -7,3 +7,11 @@
 ![Texto alternativo](https://i.ibb.co/zsCMCCZ/ER.png)
 
 ![Texto alternativo](https://i.ibb.co/Tw97T1p/Tienda-Dranimaco.png)
+
+## Frame Inicio de sesión
+
+![Texto alternativo](https://i.ibb.co/qs1ZvSS/inicio-Sesion.png)
+
+## Frame Registro
+
+![Texto alternativo](https://i.ibb.co/bFcXY77/registro.png)
