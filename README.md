@@ -23,3 +23,7 @@
 ## Frame Cambio de contraseña 2
 
 ![Texto alternativo](https://i.ibb.co/tsNjhV4/contrase-a2.png)
+
+## Frame ¿Quiénes somos?
+
+![Texto alternativo](https://i.ibb.co/sPqJsbL/somos.png)
