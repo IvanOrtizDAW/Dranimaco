@@ -27,3 +27,15 @@
 ## Frame ¿Quiénes somos?
 
 ![Texto alternativo](https://i.ibb.co/sPqJsbL/somos.png)
+
+## Frame Inicio
+
+![Texto alternativo](https://i.ibb.co/1LPyz7x/index.png)
+
+## Frame Historia
+
+![Texto alternativo](https://i.ibb.co/Rpm3xD3/historia.png)
+
+## Frame Galeria
+
+![Texto alternativo](https://i.ibb.co/WGHq8HV/galeria.png)
