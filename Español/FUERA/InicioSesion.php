@@ -34,7 +34,7 @@
 
     <section>
 
-    <div class="iniciosesion-cabecera">
+    <div class="cabecera">
       <img src="../../Imagenes/logo.png" alt="" width="250px" height="200px">
         <h1>DRANIMACO</h1>
         <h3>Formulario de inicio de sesion</h3>
@@ -119,16 +119,18 @@ session_start();
             $consulta=mysqli_query($conexion,$sql);
             $array=mysqli_fetch_array($consulta);
 
-            $sql2 = $conexion->query("SELECT usuario_nombre,usuario_pass,usuario_email,usuario_tel FROM registrados WHERE usuario_nombre='$usuario'");
+            $sql2 = $conexion->query("SELECT usuario_id,usuario_nombre,usuario_pass,usuario_email,usuario_tel FROM registrados WHERE usuario_nombre='$usuario'");
             $row=$sql2->fetch_array();
 
-            //echo $row['usuario_nombre'].$row['usuario_pass'].$row['usuario_email'].$row['usuario_tel'];
+           // echo $row['usuario_id'].$row['usuario_nombre'].$row['usuario_pass'].$row['usuario_email'].$row['usuario_tel'];
 
            $email=$row['usuario_email'];
            $telefono=$row['usuario_tel'];
+           $id=$row['usuario_id'];
 
               if (password_verify($pass, $row['usuario_pass'])) {
                   if($array['contar']>0){
+                $_SESSION['id']=$id;   
                 $_SESSION['usuario']=$usuario;
                 $_SESSION['email']=$email;
                 $_SESSION['telefono']=$telefono;

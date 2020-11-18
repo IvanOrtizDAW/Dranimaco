@@ -40,7 +40,7 @@
 
     <section>
 
-    <div class="registro-cabecera">
+    <div class="cabecera">
      <img src="../../Imagenes/logo.png" alt="" width="250px" height="200px">
         <h1>DRANIMACO</h1>
          <h3>Formulario registro</h3>
@@ -413,10 +413,11 @@
           >
 
           <div class="privacidad">
-            <u><b>POLÍTICA DE PRIVACIDAD</b></u> 
+            <h5><u><b>POLÍTICA DE PRIVACIDAD</b></u></h5> 
 
             <br />
 
+            <p>
             El presente Política de Privacidad establece los términos en que
             Animation usa y protege la información que es proporcionada por sus
             usuarios al momento de utilizar su sitio web. Esta compañía está
@@ -437,9 +438,9 @@
             servicio posible, particularmente para mantener un registro de
             usuarios, de pedidos en caso que aplique, y mejorar nuestros
             productos y servicios. 
-            
-             <br><br><br>
-
+            </p>
+      
+            <p>
             Es posible que sean enviados correos
             electrónicos periódicamente a través de nuestro sitio con ofertas
             especiales, nuevos productos y otra información publicitaria que
@@ -470,9 +471,9 @@
             cambiar la configuración de su ordenador para declinar las cookies.
             Si se declinan es posible que no pueda utilizar algunos de nuestros
             servicios.
-
-            <br><br><br>
-
+            </p>
+    
+            <p>
             Enlaces a Terceros Este sitio web pudiera contener en laces a otros
             sitios que pudieran ser de su interés. Una vez que usted de clic en
             estos enlaces y abandone nuestra página, ya no tenemos control sobre
@@ -494,6 +495,7 @@
             cambiar los términos de la presente Política de Privacidad en
             cualquier momento. Esta politica de privacidad se han generado en
             politicadeprivacidadplantilla.com
+            </p>
 
             <br />
           </div>

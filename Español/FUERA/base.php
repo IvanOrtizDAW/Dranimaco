@@ -1,6 +1,6 @@
 <?php
 
-            $conexion=mysqli_connect("localhost","root","","usuarios");
+            $conexion=mysqli_connect("localhost","root","","dranimaco");
 
 
 ?>
