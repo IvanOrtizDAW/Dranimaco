@@ -39,3 +39,7 @@
 ## Frame Galeria
 
 ![Texto alternativo](https://i.ibb.co/WGHq8HV/galeria.png)
+
+## Frame Datos
+
+![Texto alternativo](https://i.ibb.co/PCvLVL4/datos.png)
