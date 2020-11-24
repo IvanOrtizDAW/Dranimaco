@@ -43,3 +43,11 @@
 ## Frame Datos
 
 ![Texto alternativo](https://i.ibb.co/PCvLVL4/datos.png)
+
+## Frame Contacto 1
+
+![Texto alternativo](https://i.ibb.co/K7yh6ng/contacto-2.png)
+
+## Frame Contacto 2
+
+![Texto alternativo](https://i.ibb.co/J7h530y/contacto2.png)
