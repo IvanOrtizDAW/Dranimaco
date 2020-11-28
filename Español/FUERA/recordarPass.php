@@ -1,56 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link rel="stylesheet" href="../../Diseño/CSS/estilosFuera.css" type="text/css">
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../../Diseño/Bootstrap/css/bootstrap.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="icon" type="image/png" href="../../Imagenes/logo2.png">
-    <title>Pagina de inicio de sesion de Dranimaco</title>
-  </head>
-  <body>
-    <header>
-  
-    </header>
+<html lang="es">
 
-    <section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../Diseño/CSS/estilosFuera.css" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../../Diseño/Bootstrap/css/bootstrap.css" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <link rel="icon" type="image/png" href="../../Imagenes/logo2.png">
+  <title>Pagina de inicio de sesion de Dranimaco</title>
+</head>
+
+<body>
+  <header>
+
+  </header>
+
+  <section>
 
     <div class="cabecera">
-      <img src="../../Imagenes/logo.png" alt="" width="250px" height="200px">
-        <h1>DRANIMACO</h1>
-        <h3>Formulario de cambio de contraseña</h3>
+      <img src="../../Imagenes/logo.png" alt="">
+      <h1>DRANIMACO</h1>
+      <h3>Formulario de cambio de contraseña</h3>
     </div>
-<br>
-     <ul>
-           
-          <li class="menu"><a href="../../Ingles/FUERA/recordarPass.php"><img class="imagen-idioma" src="../../Imagenes/Ingles.png" alt="" ></a></li>
-        
-        </ul>
+    <br>
+    <ul>
 
-      <div class="recordar-section">
+      <li class="menu"><a href="../../Ingles/FUERA/recordarPass.php"><img class="imagen-idioma"
+            src="../../Imagenes/Ingles.png" alt=""></a></li>
 
-        <form class="contact-form" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+    </ul>
+
+    <div class="recordar-section">
+
+      <form class="contact-form" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
 
         <?php
 
@@ -73,7 +66,7 @@
 ?>
 
 
-<?php
+        <?php
 
  if (isset($_POST['enviar']) && $error==false){			
 
@@ -116,7 +109,7 @@
 ?>
 
 
-<?php
+        <?php
 
   $pattern1 = '/^[^0-9][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/';
 
@@ -135,28 +128,28 @@
 ?>
 
 
-     <input
-            type="text"
-            class="contact-form-text"
-            placeholder="Tu email"
-            name="email"
-            value=<?php 
+        <input type="text" class="contact-form-text" placeholder="Tu email" name="email" value=<?php 
 	if(isset($_POST['enviar']) && isset($_POST['email'])){
 			echo $_POST['email'];		
 	    } else{
 			echo '""';
 		}
-	?>
-          >
+	?>>
 
-          <input type="submit" class="contact-form-btn" value="Cambiar contraseña" name="enviar" id="enviar" />     
-        </form>
-        <div class="div-crear">
+        <input type="submit" class="contact-form-btn" value="Cambiar contraseña" name="enviar" id="enviar" />
+      </form>
+
+      <div class="div-crear">
         <p class="crear">Volver al menu de inicio</p>
-        <button><a href="inicioSesion.php">Pulsar</a></button>
+        <form action="inicioSesion.php">
+          <button>Pulsar</button>
+        </form>
       </div>
 
-    </section>
-    
-  </body>
+    </div>
+
+  </section>
+
+</body>
+
 </html>

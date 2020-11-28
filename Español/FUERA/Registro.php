@@ -1,62 +1,49 @@
-
-
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link rel="stylesheet" href="../../Diseño/CSS/estilosFuera.css" type="text/css">
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../../Diseño/Bootstrap/css/bootstrap.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="icon" type="image/png" href="../../Imagenes/logo2.png">
-    <title>Pagina de registro de Dranimaco</title>
-  
-  </head>
-  <body>
-    <header>
- 
-    </header>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../Diseño/CSS/estilosFuera.css" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../../Diseño/Bootstrap/css/bootstrap.css" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <link rel="icon" type="image/png" href="../../Imagenes/logo2.png">
+  <title>Pagina de registro de Dranimaco</title>
 
-    <section>
+</head>
+
+<body>
+
+  <section>
 
     <div class="cabecera">
-     <img src="../../Imagenes/logo.png" alt="" width="250px" height="200px">
-        <h1>DRANIMACO</h1>
-         <h3>Formulario registro</h3>
+      <img src="../../Imagenes/logo.png" alt="">
+      <h1>DRANIMACO</h1>
+      <h3>Formulario registro</h3>
     </div>
 
-     <ul>
-           
-          <li class="menu"><a href="../../Ingles/FUERA/Registro.php"><img class="imagen-idioma" src="../../Imagenes/Ingles.png" alt="" ></a></li>
-        
-        </ul>
+    <ul>
 
-      <div class="registro-section">
+      <li class="menu"><a href="../../Ingles/FUERA/Registro.php"><img class="imagen-idioma"
+            src="../../Imagenes/Ingles.png" alt=""></a></li>
 
-        <form class="contact-form" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+    </ul>
 
-          <?php
+    <div class="registro-section">
+
+      <form class="contact-form" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+
+        <?php
 
   $error=false;	
   
@@ -74,7 +61,7 @@
 
 ?>
 
-<?php
+        <?php
   
  if(isset($_POST["enviar"])){
 			if(!Empty($_POST["pass"])){
@@ -89,7 +76,7 @@
 
 ?>
 
-<?php
+        <?php
   
  if(isset($_POST["enviar"])){
 			if(!Empty($_POST["pass-validar"])){
@@ -109,7 +96,7 @@
 
 ?>
 
-<?php
+        <?php
 
   $pattern1 = '/^[^0-9][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/';
 
@@ -127,7 +114,7 @@
 
 ?>
 
-<?php
+        <?php
 
   $pattern_2 = '/^([0-9]{3})([0-9]{3})([0-9]{3})$/';
 
@@ -144,10 +131,10 @@
 		}
 
 ?>
-  
 
 
-<?php 
+
+        <?php 
 
 
 
@@ -157,16 +144,6 @@
             
               include("base.php");
 
-              class Password {
-    const SALT = 'EstoEsUnSalt';
-    public static function hash($password) {
-        return hash('sha512', self::SALT . $password);
-    }
-    public static function verify($password, $hash) {
-        return ($hash == self::hash($password));
-    }
-}
-            
         /** 
             if($conexion){
               echo "<p class=correcto>Conexion correcta</p><br>";
@@ -257,7 +234,7 @@
 
 ?>
 
-       <?php
+        <?php
 
  if(isset($_POST["enviar"])){
 			if(!Empty($_POST["nombre"])){
@@ -272,21 +249,15 @@
 
 ?>
 
-          <input
-            type="text"
-            class="contact-form-text"
-            placeholder="Tu nombre"
-            name="nombre"
-            value=<?php 
+        <input type="text" class="contact-form-text" placeholder="Tu nombre" name="nombre" value=<?php 
 	if(isset($_POST['enviar']) && isset($_POST['nombre'])){
 			echo $_POST['nombre'];		
 	    } else{
 			echo '""';
 		}
-	?>
-          >
+	?>>
 
-<?php
+        <?php
   
  if(isset($_POST["enviar"])){
 			if(!Empty($_POST["pass"])){
@@ -301,21 +272,12 @@
 
 ?>
 
-<div class="ojo">
-          <input
-            type="password"
-            class="contact-form-text"
-            placeholder="Tu contraeña"
-            name="pass"
-             id="pass"  
-          >
-          <i class="fas fa-eye"  id="boton"></i>
-</div>
+        <div class="ojo">
+          <input type="password" class="contact-form-text" placeholder="Tu contraeña" name="pass" id="pass">
+          <i class="fas fa-eye" id="boton"></i>
+        </div>
 
- 
-</script>
-
- <?php
+        <?php
   
  if(isset($_POST["enviar"])){
 			if(!Empty($_POST["pass-validar"])){
@@ -335,20 +297,15 @@
 
 ?>
 
-<div class="ojo">
-          <input
-            type="password"
-            class="contact-form-text"
-            placeholder="Validar contraeña"
-            name="pass-validar"
-             id="pass-validar"  
-          >
-         <i class="fas fa-eye"  id="boton2"></i>
-</div>
+        <div class="ojo">
+          <input type="password" class="contact-form-text" placeholder="Validar contraeña" name="pass-validar"
+            id="pass-validar">
+          <i class="fas fa-eye" id="boton2"></i>
+        </div>
 
 
 
-<?php
+        <?php
 
   $pattern1 = '/^[^0-9][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/';
 
@@ -366,21 +323,15 @@
 
 ?>
 
-          <input
-            type="email"
-            class="contact-form-text"
-            placeholder="Tu email"
-            name="email"
-            value=<?php 
+        <input type="email" class="contact-form-text" placeholder="Tu email" name="email" value=<?php 
 	if(isset($_POST['enviar']) && isset($_POST['email'])){
 			echo $_POST['email'];		
 	    } else{
 			echo '""';
 		}
-	?>
-          >
+	?>>
 
-<?php
+        <?php
 
   $pattern_2 = '/^([0-9]{3})([0-9]{3})([0-9]{3})$/';
 
@@ -398,26 +349,20 @@
 
 ?>
 
-          <input
-            type="text"
-            class="contact-form-text"
-            placeholder="Tu teléfono"
-            name="telefono"
-            value=<?php 
+        <input type="text" class="contact-form-text" placeholder="Tu teléfono" name="telefono" value=<?php 
 	if(isset($_POST['enviar']) && isset($_POST['telefono'])){
 			echo $_POST['telefono'];		
 	    } else{
 			echo '""';
 		}
-	?>
-          >
+	?>>
 
-          <div class="privacidad">
-            <h5><u><b>POLÍTICA DE PRIVACIDAD</b></u></h5> 
+        <div class="privacidad">
+          <h5><u><b>POLÍTICA DE PRIVACIDAD</b></u></h5>
 
-            <br />
+          <br />
 
-            <p>
+          <p>
             El presente Política de Privacidad establece los términos en que
             Animation usa y protege la información que es proporcionada por sus
             usuarios al momento de utilizar su sitio web. Esta compañía está
@@ -437,10 +382,10 @@
             web emplea la información con el fin de proporcionar el mejor
             servicio posible, particularmente para mantener un registro de
             usuarios, de pedidos en caso que aplique, y mejorar nuestros
-            productos y servicios. 
-            </p>
-      
-            <p>
+            productos y servicios.
+          </p>
+
+          <p>
             Es posible que sean enviados correos
             electrónicos periódicamente a través de nuestro sitio con ofertas
             especiales, nuevos productos y otra información publicitaria que
@@ -471,9 +416,9 @@
             cambiar la configuración de su ordenador para declinar las cookies.
             Si se declinan es posible que no pueda utilizar algunos de nuestros
             servicios.
-            </p>
-    
-            <p>
+          </p>
+
+          <p>
             Enlaces a Terceros Este sitio web pudiera contener en laces a otros
             sitios que pudieran ser de su interés. Una vez que usted de clic en
             estos enlaces y abandone nuestra página, ya no tenemos control sobre
@@ -495,14 +440,14 @@
             cambiar los términos de la presente Política de Privacidad en
             cualquier momento. Esta politica de privacidad se han generado en
             politicadeprivacidadplantilla.com
-            </p>
-
-            <br />
-          </div>
+          </p>
 
           <br />
+        </div>
 
-          <?php
+        <br />
+
+        <?php
           
           
 	function escoger($valor){
@@ -518,36 +463,31 @@
           
           ?>
 
-          <label for="aceptar">¿Estas de acuerdo?</label>
-          <input
-            type="checkbox"
-            class="contact-form-btn"
-            value="aceptar"
-            name="aceptar"
-            <?php
+        <label for="aceptar">¿Estas de acuerdo?</label>
+        <input type="checkbox" id="aceptar" class="contact-form-btn" value="aceptar" name="aceptar" <?php
             escoger("aceptar");
-            ?>
-            required
-          />
+            ?> required />
 
-          <br /><br />
+        <br /><br />
 
-          <input type="submit" class="contact-form-btn" value="Registro" name="enviar" />
+        <input type="submit" class="contact-form-btn" value="Registro" name="enviar" />
 
- 
+
+      </form>
+
+      <div class="div-crear">
+        <p class="crear">Si tienes cuenta, puedes iniciar sesión</p>
+        <form action="inicioSesion.php">
+          <button>Iniciar sesión</button>
         </form>
-
-        <div class="div-crear">
-          
-        <p class="crear">Si  tienes cuenta, puedes iniciar sesión</p>
-        <button><a href="inicioSesion.php">Iniciar sesión</a></button>
-        </div>
-
       </div>
 
-    </section>
+    </div>
 
-     <script src="../../Scripts/mostrarContrasena.js"></script>
-    <script src="../../Scripts/mostrarContrasenaValidar.js"></script>
-  </body>
+  </section>
+
+  <script src="../../Scripts/mostrarContrasena.js"></script>
+  <script src="../../Scripts/mostrarContrasenaValidar.js"></script>
+</body>
+
 </html>

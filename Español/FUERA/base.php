@@ -1,6 +1,5 @@
 <?php
 
-            $conexion=mysqli_connect("localhost","root","","dranimaco");
-
+            $conexion=mysqli_connect("localhost","user","password","dranimaco");
 
 ?>
