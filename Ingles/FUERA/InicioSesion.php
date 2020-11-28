@@ -1,58 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../Diseño/CSS/estilosFuera.css" type="text/css">
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../../DISEÑO/Bootstrap/css/bootstrap.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="icon" type="image/png" href="../../Imagenes/logo2.png">
-    <title>Pagina de inicio de sesion de Dranimaco</title>
-  </head>
-  <body>
-    <header>
- 
-    </header>
 
-    <section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../Diseño/CSS/estilosFuera.css" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../../DISEÑO/Bootstrap/css/bootstrap.css" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <link rel="icon" type="image/png" href="../../Imagenes/logo2.png">
+  <title>Pagina de inicio de sesion de Dranimaco</title>
+</head>
+
+<body>
+  <header>
+
+  </header>
+
+  <section>
 
     <div class="cabecera">
-      <img src="../../Imagenes/logo.png" alt="" width="250px" height="200px">
-        <h1>DRANIMACO</h1>
-        <h3>Login form</h3>
+      <img src="../../Imagenes/logo.png" alt="">
+      <h1>DRANIMACO</h1>
+      <h3>Login form</h3>
     </div>
-<br>
-     <ul>
-           
-          <li class="menu"><a href="../../Español/FUERA/inicioSesion.php"><img class="imagen-idioma" src="../../Imagenes/Español.png" alt="" ></a></li>
-        
-        </ul>
+    <br>
+    <ul>
 
-      <div class="iniciosesion-section">
+      <li class="menu"><a href="../../Español/FUERA/inicioSesion.php"><img class="imagen-idioma"
+            src="../../Imagenes/Español.png" alt=""></a></li>
 
-        <form class="contact-form" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+    </ul>
 
-<?php 
+    <div class="iniciosesion-section">
+
+      <form class="contact-form" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+
+        <?php 
 
 session_start();
 
@@ -72,7 +65,7 @@ session_start();
 
 ?>
 
-<?php
+        <?php
   
  if(isset($_POST["enviar"])){
 			if(!Empty($_POST["pass"])){
@@ -87,7 +80,7 @@ session_start();
 
 ?>
 
-<?php
+        <?php
   
  if(isset($_POST["enviar"])){
 			if(!Empty($_POST["codigo"])){
@@ -106,7 +99,7 @@ session_start();
 
 ?>
 
-<?php
+        <?php
 
  if (isset($_POST['enviar'])&& $error==false){			
 
@@ -144,7 +137,7 @@ session_start();
 
 ?>
 
-     <?php
+        <?php
 
  if(isset($_POST["enviar"])){
 			if(!Empty($_POST["nombre"])){
@@ -159,27 +152,21 @@ session_start();
 
 ?>
 
-<div class="div-crear">
-          
-          <p><a href="somos.html" class="recordar_pass">About us?</a>  <img src="../../Imagenes/logo2.png" alt=""></p> 
-         
-  </div>
+        <div class="div-crear">
 
-          <input
-            type="text"
-            class="contact-form-text"
-            placeholder="Your name"
-            name="nombre"
-            value=<?php 
+          <p><a href="somos.html" class="recordar_pass">About us?</a> <img src="../../Imagenes/logo2.png" alt=""></p>
+
+        </div>
+
+        <input type="text" class="contact-form-text" placeholder="Your name" name="nombre" value=<?php 
 	if(isset($_POST['enviar']) && isset($_POST['nombre'])){
 			echo $_POST['nombre'];		
 	    } else{
 			echo '""';
 		}
-	?>
-          >
+	?>>
 
-<?php
+        <?php
   
  if(isset($_POST["enviar"])){
 			if(!Empty($_POST["pass"])){
@@ -194,23 +181,17 @@ session_start();
 
 ?>
 
-<div class="ojo">
-          <input
-            type="password"
-            class="contact-form-text"
-            placeholder="Your password"
-             name="pass"
-             id="pass"           
-          >
-          <i class="fas fa-eye"  id="boton"></i>
-</div>
+        <div class="ojo">
+          <input type="password" class="contact-form-text" placeholder="Your password" name="pass" id="pass">
+          <i class="fas fa-eye" id="boton"></i>
+        </div>
 
-         <div class="captcha">
-           <img src="Captcha.php" alt="codigo">
-          </div> 
-    <br>
+        <div class="captcha">
+          <img src="Captcha.php" alt="codigo">
+        </div>
+        <br>
 
-     <?php
+        <?php
 
  if(isset($_POST["enviar"])){
 			if(!Empty($_POST["codigo"])){
@@ -229,20 +210,23 @@ session_start();
 
 ?>
 
-	  <input type="text" id="id_codigo" name="codigo" class="contact-form-text" placeholder="Enter the captcha code">
-    <br><br>
-          <input type="submit" class="contact-form-btn" value="START" name="enviar" id="enviar" />     
-        </form>
-        <div class="div-crear">
-          <p><a href="recordarPass.php" class="recordar_pass">Remember password</a>  <i class="fas fa-key"></i></p>
-          <br>
+        <input type="text" id="id_codigo" name="codigo" class="contact-form-text" placeholder="Enter the captcha code">
+        <br><br>
+        <input type="submit" class="contact-form-btn" value="START" name="enviar" id="enviar" />
+      </form>
+      <div class="div-crear">
+        <p><a href="recordarPass.php" class="recordar_pass">Remember password</a> <i class="fas fa-key"></i></p>
+        <br>
         <p class="crear">If you don't have an account, create it through the button</p>
-        <button><a href="Registro.php">Create Account</a></button>
-        </div>
+        <form action="Registro.php">
+          <button>Create Account</button>
+        </form>
       </div>
+    </div>
 
-    </section>
+  </section>
 
-      <script src="../../Scripts/mostrarContrasena.js"></script>
-  </body>
+  <script src="../../Scripts/mostrarContrasena.js"></script>
+</body>
+
 </html>
