@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../../DISEÑO/CSS/estilosFuera.css" type="text/css">
+  <link rel="stylesheet" href="../../Diseño/CSS/estilosFuera.css" type="text/css">
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../../Diseño/Bootstrap/css/bootstrap.css" />
+  <link rel="stylesheet" href="../../DISEÑO/Bootstrap/css/bootstrap.css" />
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
   </script>
@@ -23,9 +24,6 @@
 </head>
 
 <body>
-  <header>
-
-  </header>
 
   <section>
 
@@ -77,7 +75,7 @@
     <div class="cabecera">
       <img src="../../Imagenes/logo.png" alt="">
       <h1>DRANIMACO</h1>
-      <h3>Formulario de cambio de contraseña</h3>
+      <h3>Password change form</h3>
     </div>
     <br>
 
@@ -93,13 +91,13 @@
                $pass=$conexion->real_escape_string($_POST['pass']);
                $verificar_pass=mysqli_query($conexion,"SELECT * FROM registrados WHERE usuario_pass='$pass'"); 
                  if(mysqli_num_rows($verificar_pass)>0){
-                 echo "<p class=error>Contraseña ya existente,vuelve a intentarlo</p><br>";
+                 echo "<p class=error>Password already existing, please try again</p><br>";
                  }  
 						} else {	
-              echo "<p class=error>Contraseña incorrecta(Tiene que tener como minimo 5 caracteres)</p><br>";
+              echo "<p class=error>Incorrect password (It must be at least 5 characters long)</p><br>";
 						 }
 						} else {	
-						echo "<p class=error>Campo de la contraseña vacia</p><br>";
+						echo "<p class=error>Password field empty</p><br>";
 				} 	
 		}
 
@@ -110,12 +108,11 @@
 if(isset($_POST['enviar']) && $error==false){
 
     $pass=$conexion->real_escape_string($_POST['pass']);
-     $hash = password_hash($pass,  PASSWORD_DEFAULT); 
  
-    $act = $conexion->query("UPDATE registrados SET usuario_pass = '$hash', token = '' WHERE usuario_nombre ='$user'");
+    $act = $conexion->query("UPDATE registrados SET usuario_pass = '$pass', token = '' WHERE usuario_nombre ='$user'");
 
     if($act ){
-        echo "<div class=spinner-border text-info><p class=correcto>Contraseña cambiada, espere 3 segundos...</p></div><br>";
+        echo "<div class=spinner-border text-info><p class=correcto>Password changed, wait 3 seconds ..</p></div><br>";
         Header("Refresh: 3; URL=InicioSesion.php");
     }
 
@@ -123,10 +120,12 @@ if(isset($_POST['enviar']) && $error==false){
 
 ?>
 
+
         <div class="ojo">
-          <input type="password" class="contact-form-text" placeholder="Tu nueva contraseña" name="pass" id="pass">
+          <input type="password" class="contact-form-text" placeholder="Your new password" name="pass" id="pass">
           <i class="fas fa-eye" id="boton"></i>
         </div>
+
 
         <?php
   
@@ -136,26 +135,27 @@ if(isset($_POST['enviar']) && $error==false){
             if ($_POST["pass"] === $_POST["pass-validar"]) { 
                 }
                 else {   
-                  echo "<p class=error>La Validación no es corecta</p><br>"; 
+                  echo "<p class=error>Validation is not correct</p><br>"; 
                 }
 						} else {	
-              echo "<p class=error>Contraseña incorrecta(Tiene que tener como minimo 5 caracteres)</p><br>";
+              echo "<p class=error>Incorrect password (It must be at least 5 characters long)</p><br>";
 						 }
 						} else {	
-						echo "<p class=error>Campo de la contraseña vacia</p><br>";
+						echo "<p class=error>Password field empty</p><br>";
 				} 	
 		}
 
 ?>
 
 
+
         <div class="ojo">
-          <input type="password" class="contact-form-text" placeholder="Validar contraseña" name="pass-validar"
+          <input type="password" class="contact-form-text" placeholder="Validate password" name="pass-validar"
             id="pass-validar">
           <i class="fas fa-eye" id="boton2"></i>
         </div>
 
-        <input type="submit" class="contact-form-btn" value="Cambiar contraseña" name="enviar" id="enviar" />
+        <input type="submit" class="contact-form-btn" value="Change password" name="enviar" id="enviar" />
       </form>
 
     </div>
@@ -166,6 +166,8 @@ if(isset($_POST['enviar']) && $error==false){
         }
     }
 ?>
+
+
   <script src="../../Scripts/mostrarContrasena.js"></script>
   <script src="../../Scripts/mostrarContrasenaValidar.js"></script>
 </body>

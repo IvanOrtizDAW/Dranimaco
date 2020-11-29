@@ -51,3 +51,11 @@
 ## Frame Contacto 2
 
 ![Texto alternativo](https://i.ibb.co/J7h530y/contacto2.png)
+
+## Frame Tutoriales
+
+![Texto alternativo](https://i.ibb.co/PtgVQQb/Tutoriales.png)
+
+## Frame Cualquier nivel de los tutoriales
+
+![Texto alternativo](https://i.ibb.co/jD54318/videos.png)

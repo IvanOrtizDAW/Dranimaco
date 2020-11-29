@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../../Diseño/CSS/estilosFuera.css" type="text/css">
+  <link rel="stylesheet" href="../../DISEÑO/CSS/estilosFuera.css" type="text/css">
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../../Diseño/Bootstrap/css/bootstrap.css" />
+  <link rel="stylesheet" href="../../DISEÑO/Bootstrap/css/bootstrap.css" />
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
   </script>
@@ -22,22 +23,19 @@
 </head>
 
 <body>
-  <header>
-
-  </header>
 
   <section>
 
     <div class="cabecera">
       <img src="../../Imagenes/logo.png" alt="">
       <h1>DRANIMACO</h1>
-      <h3>Formulario de cambio de contraseña</h3>
+      <h3>Password change form</h3>
     </div>
     <br>
     <ul>
 
-      <li class="menu"><a href="../../Ingles/FUERA/recordarPass.php"><img class="imagen-idioma"
-            src="../../Imagenes/Ingles.png" alt=""></a></li>
+      <li class="menu"><a href="../../Español/FUERA/recordarPass.php"><img class="imagen-idioma"
+            src="../../Imagenes/Español.png" alt=""></a></li>
 
     </ul>
 
@@ -86,11 +84,11 @@
         $act= $conexion->query("UPDATE registrados SET token = '$token' WHERE usuario_email = '$email'");
 
         $email_to=$email;
-        $email_subject="Cambio de contraseña";
+        $email_subject="Change of password";
         $email_from="dranimaco2020@gmail.com";
 
-        $email_message="Hola ".$row['usuario_nombre']. " has solicitado cambiar tu contraseña, ingresa al siguiente link\n\n";
-        $email_message .="http://dranimaco.com/Espa%C3%B1ol/FUERA/nuevaPass.php?user=".$row['usuario_nombre']."&token=".$token."\n\n";
+        $email_message="Hello ".$row['usuario_nombre']. " you have requested to change your password, enter the following link\n\n";
+        $email_message .="http://dranimaco.com/Ingles/FUERA/nuevaPass.php?user=".$row['usuario_nombre']."&token=".$token."\n\n";
 
          $headers = 'From: ' .$email_from . "\r\n". 
         'Reply-To: ' . $email_from. "\r\n" . 
@@ -98,10 +96,10 @@
         
         mail($email_to, $email_subject, $email_message, $headers); 
 
-        echo "<p class=correcto>Revisa tu correo</p><br>";
+        echo "<p class=correcto>Check your email</p><br>";
 
       }else{
-        echo "<p class=error>Este correo no esta registrado en nuetra base de datos</p><br>";
+        echo "<p class=error>This email is not registered in our database</p><br>";
       }
 				
  }
@@ -128,7 +126,7 @@
 ?>
 
 
-        <input type="text" class="contact-form-text" placeholder="Tu email" name="email" value=<?php 
+        <input type="text" class="contact-form-text" placeholder="Your email" name="email" value=<?php 
 	if(isset($_POST['enviar']) && isset($_POST['email'])){
 			echo $_POST['email'];		
 	    } else{
@@ -136,16 +134,14 @@
 		}
 	?>>
 
-        <input type="submit" class="contact-form-btn" value="Cambiar contraseña" name="enviar" id="enviar" />
+        <input type="submit" class="contact-form-btn" value="Change password" name="enviar" id="enviar" />
       </form>
-
       <div class="div-crear">
-        <p class="crear">Volver al menu de inicio</p>
+        <p class="crear">Back to the log in menu</p>
         <form action="inicioSesion.php">
-          <button>Pulsar</button>
+          <button>Press</button>
         </form>
       </div>
-
     </div>
 
   </section>
