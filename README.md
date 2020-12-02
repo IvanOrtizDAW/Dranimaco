@@ -1,12 +1,24 @@
 # Dranimaco
 
+### Logo
+
 ![Texto alternativo](https://i.ibb.co/0XVBmXq/logo.png)
+
+### Estructura página web Dranimaco
 
 ![Texto alternativo](https://i.ibb.co/wrS5Y6j/Dranimaco.png)
 
-![Texto alternativo](https://i.ibb.co/8sGq4xD/ER.png)
+### Estructura tienda online de la página web Dranimaco
 
 ![Texto alternativo](https://i.ibb.co/Tw97T1p/Tienda-Dranimaco.png)
+
+### UML de la base de datos de la página web Dranimaco
+
+![Texto alternativo](https://i.ibb.co/8sGq4xD/ER.png)
+
+### ER de la base de datos de la página web Dranimaco
+
+![Texto alternativo](https://i.ibb.co/bbdLSbB/ER-BD.png)
 
 ## Frame Inicio de sesión
 
