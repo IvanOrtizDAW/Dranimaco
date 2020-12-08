@@ -56,6 +56,7 @@ function woocs_add_fixed_field(post_id,selector, hash) {
     
     if (code) {
         var html = jQuery('#woocs_multiple_simple_tpl_'+selector).html();
+        console.log(html)
         html = html.replace(/__POST_ID__/gi, post_id);
         html = html.replace(/__HASH__/gi, hash);
         html = html.replace(/__CURR_CODE__/gi, code);

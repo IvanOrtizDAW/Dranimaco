@@ -20,7 +20,7 @@ import { errorTypes, errorCodes } from './constants';
 /**
  * Stripe data comes form the server passed on a global object.
  *
- * @return  {StripeServerData} Stripe server data.
+ * @return  {StripeServerData}
  */
 const getStripeServerData = () => {
 	const stripeServerData = getSetting( 'stripe_data', null );
@@ -253,10 +253,6 @@ const getErrorMessageForTypeAndCode = ( type, code = '' ) => {
  * shipping, so we can track when one of them change to update rates.
  *
  * @param {Object} address          An object containing all address information
- * @param {string} address.country
- * @param {string} address.state
- * @param {string} address.city
- * @param {string} address.postcode
  *
  * @return {Object} pluckedAddress  An object containing shipping address that are needed to fetch an address.
  */

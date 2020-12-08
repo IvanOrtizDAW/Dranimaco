@@ -5,11 +5,15 @@
 # Cualquier cambio en las directivas que hay entre esos marcadores serán sobrescritas.
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /githubwp/Dranimaco/wordpress/
+RewriteBase /wordpress/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /githubwp/Dranimaco/wordpress/index.php [L]
+RewriteRule . /wordpress/index.php [L]
 </IfModule>
+
+php_value upload_max_filesize 128M
+php_value post_max_size 256M
+php_value memory_limit 512M
 
 # END WordPress

@@ -14,9 +14,6 @@ import './style.scss';
 
 /**
  * Component to handle edit mode for the Cart block when cart is empty.
- *
- * @param {Object} props Incoming props for the component.
- * @param {boolean} props.hidden Whether this component is hidden or not.
  */
 const EmptyCartEdit = ( { hidden = false } ) => {
 	return (
@@ -49,7 +46,6 @@ const EmptyCartEdit = ( { hidden = false } ) => {
 						{
 							align: 'center',
 							content: sprintf(
-								// Translators: %s is the link to the store product directory.
 								__(
 									'<a href="%s">Browse store</a>.',
 									'woocommerce'

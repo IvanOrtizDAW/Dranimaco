@@ -111,7 +111,6 @@ jQuery(function ($) {
         return false;
     });
 
-
     jQuery('.woocs_is_etalon').life('click', function () {
         jQuery('.woocs_is_etalon').next('input[type=hidden]').val(0);
         jQuery('.woocs_is_etalon').prop('checked', 0);

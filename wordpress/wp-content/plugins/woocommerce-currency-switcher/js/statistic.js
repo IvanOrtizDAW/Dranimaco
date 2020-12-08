@@ -10,10 +10,10 @@ var woocs_stat_data = [];
 jQuery(function () {
     woocs_stat_init_calendars();
 
-    google.charts.load('current', {'packages': ['corechart']});
+      google.charts.load('current', {'packages':['corechart']});
 
-    // Set a callback to run when the Google Visualization API is loaded.
-    google.charts.setOnLoadCallback(woocs_draw_stat_chart);
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(woocs_draw_stat_chart);
     //***
 
     woocs_stat_chart_type = woocs_get_cookie('woocs_stat_chart_type');
@@ -28,7 +28,7 @@ jQuery(function () {
         switch (jQuery(this).val()) {
             case 'order':
                 woocs_stat_init_calendars(false);
-
+                
                 woocs_stat_redraw(woocs_stat_scenario);
                 break;
             default:
@@ -61,29 +61,29 @@ function woocs_stat_activate_graph() {
 //https://developers.google.com/chart/interactive/docs
 function woocs_draw_stat_chart() {
 
-    var ChartsData = [];
-    ChartsData.push(["Currency", "Count", {role: "style"}])
-
-    jQuery.each(woocs_stat_labels, function (index, value) {
-        //console.log(woocs_stat_data[index]);
-        if (woocs_stat_data[index]) {
-            ChartsData.push([value, woocs_stat_data[index], woof_getRandomColor()]);
+        var ChartsData=[];
+        ChartsData.push(["Currency", "Count", { role: "style" } ])
+        
+        jQuery.each(woocs_stat_labels,function(index,value){
+            console.log(woocs_stat_data[index]);
+            if(woocs_stat_data[index]){
+            ChartsData.push([value,woocs_stat_data[index], woof_getRandomColor()]);
         }
-    });
+        });
 
-    var data = google.visualization.arrayToDataTable(ChartsData);
+        var data = google.visualization.arrayToDataTable(ChartsData);
+        
+        var options = {'title':woocs_stat_label};
+        if(woocs_stat_chart_type=='bar'){
+            var chart = new google.visualization.ColumnChart(document.getElementById('woocs-stat-chart'));
+        }else{
+             var chart = new google.visualization.PieChart(document.getElementById('woocs-stat-chart'));
+        }
+      
+            chart.draw(data, options);
+        
 
-    var options = {'title': woocs_stat_label};
-    if (woocs_stat_chart_type == 'bar') {
-        var chart = new google.visualization.ColumnChart(document.getElementById('woocs-stat-chart'));
-    } else {
-        var chart = new google.visualization.PieChart(document.getElementById('woocs-stat-chart'));
-    }
-
-    chart.draw(data, options);
-
-
-
+        
 }
 
 
@@ -112,12 +112,12 @@ function woocs_stat_redraw(scenario) {
 }
 //https://stackoverflow.com/questions/1484506/random-color-generator
 function woof_getRandomColor() {
-    var letters = '0123456789ABCDEF';
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
 }
 function woocs_stat_init_calendars(for_currency = true) {
     jQuery(".woocs_stat_calendar").datepicker('destroy').datepicker(

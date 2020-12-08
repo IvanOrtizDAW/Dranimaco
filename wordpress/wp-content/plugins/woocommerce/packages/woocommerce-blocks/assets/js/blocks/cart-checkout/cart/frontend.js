@@ -8,7 +8,7 @@ import {
 import { __ } from '@wordpress/i18n';
 import { StoreNoticesProvider } from '@woocommerce/base-context';
 import { CURRENT_USER_IS_ADMIN } from '@woocommerce/block-settings';
-import { createInterpolateElement } from 'wordpress-element';
+import { __experimentalCreateInterpolateElement } from 'wordpress-element';
 import {
 	renderFrontend,
 	getValidBlockAttributes,
@@ -44,7 +44,7 @@ const getProps = ( el ) => {
 const getErrorBoundaryProps = () => {
 	return {
 		header: __( 'Something went wrong…', 'woocommerce' ),
-		text: createInterpolateElement(
+		text: __experimentalCreateInterpolateElement(
 			__(
 				'The cart has encountered an unexpected error. <button>Try reloading the page</button>. If the error persists, please get in touch with us so we can assist.',
 				'woocommerce'

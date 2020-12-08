@@ -21,7 +21,6 @@ const CheckoutForm = ( {
 	showCompanyField,
 	showOrderNotes,
 	showPhoneField,
-	allowCreateAccount,
 } ) => {
 	const { onSubmit } = useCheckoutContext();
 
@@ -33,7 +32,6 @@ const CheckoutForm = ( {
 				showApartmentField={ showApartmentField }
 				showCompanyField={ showCompanyField }
 				showPhoneField={ showPhoneField }
-				allowCreateAccount={ allowCreateAccount }
 			/>
 			<ShippingOptionsStep />
 			<PaymentMethodStep />

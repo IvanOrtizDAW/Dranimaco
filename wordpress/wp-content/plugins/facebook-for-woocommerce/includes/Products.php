@@ -10,8 +10,8 @@
 
 namespace SkyVerge\WooCommerce\Facebook;
 
-use SkyVerge\WooCommerce\PluginFramework\v5_10_0\SV_WC_Plugin_Exception;
-use SkyVerge\WooCommerce\PluginFramework\v5_10_0 as Framework;
+use SkyVerge\WooCommerce\PluginFramework\v5_5_4\SV_WC_Plugin_Exception;
+use SkyVerge\WooCommerce\PluginFramework\v5_5_4 as Framework;
 use WC_Facebook_Product;
 
 defined( 'ABSPATH' ) or exit;
@@ -1088,11 +1088,6 @@ class Products {
 	 */
 	public static function get_available_product_attributes( \WC_Product $product ) {
 
-		if ( $product->is_type( 'variation' ) ) {
-			$parent_product = wc_get_product( $product->get_parent_id() );
-			return $parent_product instanceof \WC_Product ? self::get_available_product_attributes( $parent_product ) : array();
-		}
-
 		return $product->get_attributes();
 	}
 
@@ -1116,17 +1111,9 @@ class Products {
 
 		if ( empty( $value ) ) {
 			// Check normal product attributes
-			foreach ( $product->get_attributes() as $slug => $attribute ) {
-				if ( $product->is_type( 'variation' ) ) {
-					$attr_name = $slug;
-					$attr_val  = $attribute;
-				} else {
-					$attr_name = $attribute->get_name();
-					$attr_val  = $product->get_attribute( $slug );
-				}
-
-				if ( strtolower( $attr_name ) === $key ) {
-					$value = $attr_val;
+			foreach ( self::get_available_product_attributes( $product ) as $slug => $attribute ) {
+				if ( strtolower( $attribute->get_name() ) === $key ) {
+					$value = $product->get_attribute( $slug );
 					break;
 				}
 			}

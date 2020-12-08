@@ -315,7 +315,6 @@ const Edit = ( { attributes, setAttributes, debouncedSpeak } ) => {
 			),
 			selected: ( n ) =>
 				sprintf(
-					// Translators: %d is the number of attributes selected.
 					_n(
 						'%d attribute selected',
 						'%d attributes selected',

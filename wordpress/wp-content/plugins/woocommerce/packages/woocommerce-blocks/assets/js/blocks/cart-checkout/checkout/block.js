@@ -53,8 +53,7 @@ const Block = ( props ) => {
  * Main Checkout Component.
  *
  * @param {Object} props Component props.
- * @param {Object} props.attributes Incoming block attributes.
- * @param {function(any):any} props.scrollToTop Function for scrolling to top.
+ * @return {*} The component.
  */
 const Checkout = ( { attributes, scrollToTop } ) => {
 	const { isEditor } = useEditorContext();
@@ -92,12 +91,7 @@ const Checkout = ( { attributes, scrollToTop } ) => {
 		return <CheckoutOrderError />;
 	}
 
-	if (
-		! isEditor &&
-		! customerId &&
-		! CHECKOUT_ALLOWS_GUEST &&
-		! attributes.allowCreateAccount
-	) {
+	if ( ! isEditor && ! customerId && ! CHECKOUT_ALLOWS_GUEST ) {
 		return (
 			<>
 				{ __(
@@ -113,6 +107,7 @@ const Checkout = ( { attributes, scrollToTop } ) => {
 			</>
 		);
 	}
+
 	const checkoutClassName = classnames( 'wc-block-checkout', {
 		'has-dark-controls': attributes.hasDarkControls,
 	} );
@@ -128,7 +123,6 @@ const Checkout = ( { attributes, scrollToTop } ) => {
 						showPhoneField={ attributes.showPhoneField }
 						requireCompanyField={ attributes.requireCompanyField }
 						requirePhoneField={ attributes.requirePhoneField }
-						allowCreateAccount={ attributes.allowCreateAccount }
 					/>
 					<div className="wc-block-checkout__actions">
 						{ attributes.showReturnToCart && (

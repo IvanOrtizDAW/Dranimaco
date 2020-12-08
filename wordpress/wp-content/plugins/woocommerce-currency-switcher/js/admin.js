@@ -119,29 +119,9 @@ function woocs_check_api_key_field() {
     }
 }
 
-
 woocs_check_api_key_field();
 jQuery("#woocs_currencies_aggregator").change(function () {
     woocs_check_api_key_field();
-});
-
-
-
-function woocs_check_storage_type() {
-    var storage = jQuery("#woocs_storage").val();
-
-    if (jQuery.inArray(storage, ['memcached', 'redis']) !== -1) {
-        jQuery("#woocs_storage_server").parents("tr").show();
-        jQuery("#woocs_storage_port").parents("tr").show();
-    } else {
-        jQuery("#woocs_storage_server").parents("tr").hide();
-        jQuery("#woocs_storage_port").parents("tr").hide();
-    }
-}
-
-woocs_check_storage_type();
-jQuery("#woocs_storage").change(function () {
-    woocs_check_storage_type();
 });
 
 

@@ -10,8 +10,6 @@
  * @package     WooCommerce\Classes
  */
 
-use Automattic\WooCommerce\Utilities\NumberUtil;
-
 defined( 'ABSPATH' ) || exit;
 
 require_once WC_ABSPATH . 'includes/legacy/abstract-wc-legacy-order.php';
@@ -430,7 +428,7 @@ abstract class WC_Abstract_Order extends WC_Abstract_Legacy_Order {
 		} else {
 			$total_discount = $this->get_discount_total() + $this->get_discount_tax();
 		}
-		return apply_filters( 'woocommerce_order_get_total_discount', NumberUtil::round( $total_discount, WC_ROUNDING_PRECISION ), $this );
+		return apply_filters( 'woocommerce_order_get_total_discount', round( $total_discount, WC_ROUNDING_PRECISION ), $this );
 	}
 
 	/**
@@ -439,7 +437,7 @@ abstract class WC_Abstract_Order extends WC_Abstract_Legacy_Order {
 	 * @return float
 	 */
 	public function get_subtotal() {
-		$subtotal = NumberUtil::round( $this->get_cart_subtotal_for_order(), wc_get_price_decimals() );
+		$subtotal = round( $this->get_cart_subtotal_for_order(), wc_get_price_decimals() );
 		return apply_filters( 'woocommerce_order_get_subtotal', (float) $subtotal, $this );
 	}
 
@@ -674,7 +672,7 @@ abstract class WC_Abstract_Order extends WC_Abstract_Legacy_Order {
 	 */
 	protected function set_total_tax( $value ) {
 		// We round here because this is a total entry, as opposed to line items in other setters.
-		$this->set_prop( 'total_tax', wc_format_decimal( NumberUtil::round( $value, wc_get_price_decimals() ) ) );
+		$this->set_prop( 'total_tax', wc_format_decimal( round( $value, wc_get_price_decimals() ) ) );
 	}
 
 	/**
@@ -1679,7 +1677,7 @@ abstract class WC_Abstract_Order extends WC_Abstract_Legacy_Order {
 
 		// Sum shipping costs.
 		foreach ( $this->get_shipping_methods() as $shipping ) {
-			$shipping_total += NumberUtil::round( $shipping->get_total(), wc_get_price_decimals() );
+			$shipping_total += round( $shipping->get_total(), wc_get_price_decimals() );
 		}
 
 		$this->set_shipping_total( $shipping_total );
@@ -1689,7 +1687,7 @@ abstract class WC_Abstract_Order extends WC_Abstract_Legacy_Order {
 			$fee_total = $item->get_total();
 
 			if ( 0 > $fee_total ) {
-				$max_discount = NumberUtil::round( $cart_total + $fees_total + $shipping_total, wc_get_price_decimals() ) * -1;
+				$max_discount = round( $cart_total + $fees_total + $shipping_total, wc_get_price_decimals() ) * -1;
 
 				if ( $fee_total < $max_discount && 0 > $max_discount ) {
 					$item->set_total( $max_discount );
@@ -1716,9 +1714,9 @@ abstract class WC_Abstract_Order extends WC_Abstract_Legacy_Order {
 			}
 		}
 
-		$this->set_discount_total( NumberUtil::round( $cart_subtotal - $cart_total, wc_get_price_decimals() ) );
+		$this->set_discount_total( round( $cart_subtotal - $cart_total, wc_get_price_decimals() ) );
 		$this->set_discount_tax( wc_round_tax_total( $cart_subtotal_tax - $cart_total_tax ) );
-		$this->set_total( NumberUtil::round( $cart_total + $fees_total + $this->get_shipping_total() + $this->get_cart_tax() + $this->get_shipping_tax(), wc_get_price_decimals() ) );
+		$this->set_total( round( $cart_total + $fees_total + $this->get_shipping_total() + $this->get_cart_tax() + $this->get_shipping_tax(), wc_get_price_decimals() ) );
 
 		do_action( 'woocommerce_order_after_calculate_totals', $and_taxes, $this );
 
@@ -1769,7 +1767,7 @@ abstract class WC_Abstract_Order extends WC_Abstract_Legacy_Order {
 				$subtotal = $item->get_subtotal();
 			}
 
-			$subtotal = $round ? NumberUtil::round( $subtotal, wc_get_price_decimals() ) : $subtotal;
+			$subtotal = $round ? round( $subtotal, wc_get_price_decimals() ) : $subtotal;
 		}
 
 		return apply_filters( 'woocommerce_order_amount_line_subtotal', $subtotal, $this, $item, $inc_tax, $round );
@@ -1793,7 +1791,7 @@ abstract class WC_Abstract_Order extends WC_Abstract_Legacy_Order {
 				$total = floatval( $item->get_total() ) / $item->get_quantity();
 			}
 
-			$total = $round ? NumberUtil::round( $total, wc_get_price_decimals() ) : $total;
+			$total = $round ? round( $total, wc_get_price_decimals() ) : $total;
 		}
 
 		return apply_filters( 'woocommerce_order_amount_item_total', $total, $this, $item, $inc_tax, $round );
@@ -1815,7 +1813,7 @@ abstract class WC_Abstract_Order extends WC_Abstract_Legacy_Order {
 			$total = $inc_tax ? $item->get_total() + $item->get_total_tax() : $item->get_total();
 
 			// Check if we need to round.
-			$total = $round ? NumberUtil::round( $total, wc_get_price_decimals() ) : $total;
+			$total = $round ? round( $total, wc_get_price_decimals() ) : $total;
 		}
 
 		return apply_filters( 'woocommerce_order_amount_line_total', $total, $this, $item, $inc_tax, $round );

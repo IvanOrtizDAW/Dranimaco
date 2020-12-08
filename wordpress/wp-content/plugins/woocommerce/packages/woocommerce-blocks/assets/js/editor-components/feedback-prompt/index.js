@@ -12,10 +12,6 @@ import './style.scss';
 
 /**
  * Component to render a Feedback prompt in the sidebar.
- *
- * @param {Object} props Incoming props for the component.
- * @param {string} props.text
- * @param {string} props.url
  */
 const FeedbackPrompt = ( {
 	text,

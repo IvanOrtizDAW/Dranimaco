@@ -9,7 +9,6 @@ const CartLineItemsTitle = ( { itemCount = 1 } ) => {
 	return (
 		<Title headingLevel="2">
 			{ sprintf(
-				// Translators: %d is the count of items in the cart.
 				_n(
 					'Your cart (%d item)',
 					'Your cart (%d items)',

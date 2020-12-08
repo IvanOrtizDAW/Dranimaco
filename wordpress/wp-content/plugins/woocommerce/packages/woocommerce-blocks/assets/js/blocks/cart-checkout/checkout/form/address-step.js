@@ -20,7 +20,6 @@ const AddressStep = ( {
 	showApartmentField,
 	showCompanyField,
 	showPhoneField,
-	allowCreateAccount,
 } ) => {
 	const {
 		defaultAddressFields,
@@ -59,7 +58,6 @@ const AddressStep = ( {
 			<ContactFieldsStep
 				emailValue={ billingFields.email }
 				onChangeEmail={ setEmail }
-				allowCreateAccount={ allowCreateAccount }
 			/>
 			{ needsShipping && (
 				<ShippingFieldsStep

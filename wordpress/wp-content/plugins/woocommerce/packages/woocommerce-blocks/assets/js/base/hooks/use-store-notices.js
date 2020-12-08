@@ -29,10 +29,11 @@ export const useStoreNotices = () => {
 				);
 			},
 			removeNotices: ( status = null ) => {
-				currentNotices.current.forEach( ( notice ) => {
+				currentNotices.current.map( ( notice ) => {
 					if ( status === null || notice.status === status ) {
 						removeNotice( notice.id );
 					}
+					return true;
 				} );
 			},
 			removeNotice,

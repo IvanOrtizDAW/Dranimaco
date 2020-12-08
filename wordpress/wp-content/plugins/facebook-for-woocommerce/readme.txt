@@ -2,8 +2,8 @@
 Contributors: facebook, automattic, woothemes
 Tags: facebook, shop, catalog, advertise, pixel, product
 Requires at least: 4.4
-Tested up to: 5.5.3
-Stable tag: 2.2.0
+Tested up to: 5.5.1
+Stable tag: 2.1.3
 Requires PHP: 5.6 or greater
 MySQL: 5.6 or greater
 License: GPLv2 or later
@@ -38,15 +38,6 @@ When opening a bug on GitHub, please give us as many details as possible.
 * Current version of Facebook-for-WooCommerce, WooCommerce, Wordpress, PHP
 
 == Changelog ==
-
-= 2020.11.19 - version 2.2.0 =
- * Feature - Add an Advertise tab in the Facebook settings page to manage Facebook ads from within WooCommerce
- * Tweak - Move the Facebook settings page into the Marketing menu item (WooCommerce 4.0+)
- * Fix - Move the filter `facebook_for_woocommerce_integration_pixel_enabled` initialization to avoid possible uncaught JavaScript errors in front end
- * Fix - Update field name and format for additional_variant_attribute to resolve Facebook catalog sync for variable products.
-
-= 2020.11.04 - version 2.1.4 =
- * Fix - Ensure product variant attributes are correctly handled when checking for enhanced attribute values.
 
 = 2020.10.29 - version 2.1.3 =
  * Fix - Prevent error triggered while trying to refund orders

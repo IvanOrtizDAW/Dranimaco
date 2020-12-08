@@ -1052,14 +1052,6 @@ class WC_Countries {
 							'required' => false,
 						),
 					),
-					'IN' => array(
-						'postcode' => array(
-							'label' => __( 'Pin code', 'woocommerce' ),
-						),
-						'state'    => array(
-							'label' => __( 'State', 'woocommerce' ),
-						),
-					),
 					'IT' => array(
 						'postcode' => array(
 							'priority' => 65,
@@ -1215,15 +1207,9 @@ class WC_Countries {
 						),
 					),
 					'RS' => array(
-						'city'     => array(
+						'state' => array(
 							'required' => false,
-						),
-						'postcode' => array(
-							'required' => false,
-						),
-						'state'    => array(
-							'label' => __( 'District', 'woocommerce' ),
-							'required' => false,
+							'hidden'   => true,
 						),
 					),
 					'SG' => array(

@@ -1,0 +1,478 @@
+0000.000 (0) Opened log file at time: Tue, 01 Dec 2020 19:38:52 +0000 on http://dranimaco.com/wordpress
+0000.001 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.41 WP: 5.5.3 PHP: 7.3.21 (apache2handler, Windows NT DESKTOP-J8R35OJ 10.0 build 18363 (Windows 10) AMD64) MySQL: 5.7.31 WPLANG: es_ES Server: Apache/2.4.46 (Win64) OpenSSL/1.1.1g PHP/7.3.21 safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 25.7M | 2M) multisite: N openssl: OpenSSL 1.1.1g  21 Apr 2020 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.002 (0) Free space on disk containing Updraft's temporary directory: 269835.2 MB
+0000.005 (0) Tasks: Backup files: 1 (schedule: unset) Backup DB: 1 (schedule: unset)
+0000.007 (0) Semaphore (fd, wp_options) being initialised
+0000.008 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.028 (0) Set semaphore last lock (fd) time to 2020-12-01 19:38:52
+0000.029 (0) Semaphore lock (fd) complete
+0000.032 (0) Backup run: resumption=0, nonce=c5e620d61c70, file_nonce=c5e620d61c70 begun at=1606851532 (0s ago), job type=backup
+0000.034 (0) Scheduling a resumption (1) after 300 seconds (1606851832) in case this run gets aborted
+0000.042 (0) Checking if we have a zip executable available
+0000.044 (0) Creation of backups of directories: beginning
+0000.049 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0002.890 (0) Total entities for the zip file: 1409 directories, 7867 files (0 skipped as non-modified), 111.2 MB
+0002.918 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0 MB, 1 (1) files added so far); re-opening (prior size: 0 KB)
+0003.914 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 100 files added (on-disk size: 278.8 KB)
+0004.269 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 200 files added (on-disk size: 278.8 KB)
+0004.806 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 300 files added (on-disk size: 278.8 KB)
+0005.167 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 400 files added (on-disk size: 278.8 KB)
+0005.470 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (20.3 MB, 462 (463) files added so far); re-opening (prior size: 278.8 KB)
+0006.030 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 500 files added (on-disk size: 1498.9 KB)
+0006.535 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 600 files added (on-disk size: 1498.9 KB)
+0007.037 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 700 files added (on-disk size: 1498.9 KB)
+0007.785 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 800 files added (on-disk size: 1498.9 KB)
+0008.477 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.3 MB, 381 (844) files added so far); re-opening (prior size: 1498.9 KB)
+0009.361 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 900 files added (on-disk size: 2104.1 KB)
+0010.410 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 1000 files added (on-disk size: 2104.1 KB)
+0011.490 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (2.2 MB, 256 (1100) files added so far); re-opening (prior size: 2104.1 KB)
+0011.677 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 1100 files added (on-disk size: 3372.8 KB)
+0012.260 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 1200 files added (on-disk size: 3372.8 KB)
+0013.373 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 1300 files added (on-disk size: 3372.8 KB)
+0014.473 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (6.2 MB, 291 (1391) files added so far); re-opening (prior size: 3372.8 KB)
+0015.143 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 1400 files added (on-disk size: 6127.9 KB)
+0015.854 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 1500 files added (on-disk size: 6127.9 KB)
+0016.820 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 1600 files added (on-disk size: 6127.9 KB)
+0017.474 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (2.5 MB, 283 (1674) files added so far); re-opening (prior size: 6127.9 KB)
+0017.989 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 1700 files added (on-disk size: 6813.2 KB)
+0018.134 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 1800 files added (on-disk size: 6813.2 KB)
+0018.167 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 1900 files added (on-disk size: 6813.2 KB)
+0018.200 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 2000 files added (on-disk size: 6813.2 KB)
+0018.234 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 2100 files added (on-disk size: 6813.2 KB)
+0018.265 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 2200 files added (on-disk size: 6813.2 KB)
+0018.297 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 2300 files added (on-disk size: 6813.2 KB)
+0018.330 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 2400 files added (on-disk size: 6813.2 KB)
+0018.363 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 2500 files added (on-disk size: 6813.2 KB)
+0018.396 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 2600 files added (on-disk size: 6813.2 KB)
+0018.421 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (22.8 MB, 7867 files batched, 1001 (2675) added so far); re-opening (prior size: 6813.2 KB)
+0019.932 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 2700 files added (on-disk size: 13524.4 KB)
+0019.966 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 2800 files added (on-disk size: 13524.4 KB)
+0020.000 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 2900 files added (on-disk size: 13524.4 KB)
+0020.034 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 3000 files added (on-disk size: 13524.4 KB)
+0020.276 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 3100 files added (on-disk size: 13524.4 KB)
+0021.110 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 3200 files added (on-disk size: 13524.4 KB)
+0022.813 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (8.8 MB, 612 (3287) files added so far); re-opening (prior size: 13524.4 KB)
+0023.990 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 3300 files added (on-disk size: 15370 KB)
+0025.646 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.6 MB, 50 (3337) files added so far); re-opening (prior size: 15370 KB)
+0026.860 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 3400 files added (on-disk size: 15543.1 KB)
+0028.469 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (3.4 MB, 111 (3448) files added so far); re-opening (prior size: 15543.1 KB)
+0030.767 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 3500 files added (on-disk size: 16258.3 KB)
+0031.888 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.5 MB, 69 (3517) files added so far); re-opening (prior size: 16258.3 KB)
+0032.928 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 3600 files added (on-disk size: 16400.7 KB)
+0033.659 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 3700 files added (on-disk size: 16400.7 KB)
+0034.476 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (2.7 MB, 234 (3751) files added so far); re-opening (prior size: 16400.7 KB)
+0034.892 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 3800 files added (on-disk size: 17099.8 KB)
+0035.196 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 3900 files added (on-disk size: 17099.8 KB)
+0035.405 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 4000 files added (on-disk size: 17099.8 KB)
+0036.331 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 4100 files added (on-disk size: 17099.8 KB)
+0036.917 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 4200 files added (on-disk size: 17099.8 KB)
+0037.398 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 4300 files added (on-disk size: 17099.8 KB)
+0037.473 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (9 MB, 592 (4343) files added so far); re-opening (prior size: 17099.8 KB)
+0039.122 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 4400 files added (on-disk size: 19700.9 KB)
+0040.177 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 4500 files added (on-disk size: 19700.9 KB)
+0040.473 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.1 MB, 191 (4534) files added so far); re-opening (prior size: 19700.9 KB)
+0041.120 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 4600 files added (on-disk size: 20246.7 KB)
+0041.921 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 4700 files added (on-disk size: 20246.7 KB)
+0042.466 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 4800 files added (on-disk size: 20246.7 KB)
+0043.151 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 4900 files added (on-disk size: 20246.7 KB)
+0043.480 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.7 MB, 406 (4940) files added so far); re-opening (prior size: 20246.7 KB)
+0044.666 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 5000 files added (on-disk size: 20588.2 KB)
+0046.472 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.2 MB, 97 (5037) files added so far); re-opening (prior size: 20588.2 KB)
+0048.098 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 5100 files added (on-disk size: 20683.6 KB)
+0048.729 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 5200 files added (on-disk size: 20683.6 KB)
+0049.525 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.3 MB, 211 (5248) files added so far); re-opening (prior size: 20683.6 KB)
+0050.181 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 5300 files added (on-disk size: 20877.2 KB)
+0051.144 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 5400 files added (on-disk size: 20877.2 KB)
+0051.507 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 5500 files added (on-disk size: 20877.2 KB)
+0052.112 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 5600 files added (on-disk size: 20877.2 KB)
+0052.469 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (5.1 MB, 419 (5667) files added so far); re-opening (prior size: 20877.2 KB)
+0053.276 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 5700 files added (on-disk size: 22331.7 KB)
+0055.290 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 5800 files added (on-disk size: 22331.7 KB)
+0055.474 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.6 MB, 147 (5814) files added so far); re-opening (prior size: 22331.7 KB)
+0056.043 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 5900 files added (on-disk size: 22501.9 KB)
+0056.799 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 6000 files added (on-disk size: 22501.9 KB)
+0057.650 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 6100 files added (on-disk size: 22501.9 KB)
+0058.469 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (3.1 MB, 360 (6174) files added so far); re-opening (prior size: 22501.9 KB)
+0059.183 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 6200 files added (on-disk size: 24260.9 KB)
+0061.007 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 6300 files added (on-disk size: 24260.9 KB)
+0061.473 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (2.3 MB, 195 (6369) files added so far); re-opening (prior size: 24260.9 KB)
+0062.284 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 6400 files added (on-disk size: 25339.1 KB)
+0063.177 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 6500 files added (on-disk size: 25339.1 KB)
+0064.471 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.7 MB, 231 (6600) files added so far); re-opening (prior size: 25339.1 KB)
+0064.687 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 6600 files added (on-disk size: 25619.8 KB)
+0065.975 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 6700 files added (on-disk size: 25619.8 KB)
+0066.453 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 6800 files added (on-disk size: 25619.8 KB)
+0067.342 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 6900 files added (on-disk size: 25619.8 KB)
+0067.478 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (7.5 MB, 318 (6918) files added so far); re-opening (prior size: 25619.8 KB)
+0068.923 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 7000 files added (on-disk size: 27823 KB)
+0069.360 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 7100 files added (on-disk size: 27823 KB)
+0070.469 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.4 MB, 233 (7151) files added so far); re-opening (prior size: 27823 KB)
+0071.091 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 7200 files added (on-disk size: 28336.2 KB)
+0071.164 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 7300 files added (on-disk size: 28336.2 KB)
+0071.975 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 7400 files added (on-disk size: 28336.2 KB)
+0073.135 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 7500 files added (on-disk size: 28336.2 KB)
+0073.483 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.6 MB, 386 (7537) files added so far); re-opening (prior size: 28336.2 KB)
+0075.123 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 7600 files added (on-disk size: 28813.9 KB)
+0076.034 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 7700 files added (on-disk size: 28813.9 KB)
+0076.515 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (5.1 MB, 175 (7712) files added so far); re-opening (prior size: 28813.9 KB)
+0078.632 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip.tmp: 7800 files added (on-disk size: 31561.4 KB)
+0079.516 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.3 MB, 148 (7860) files added so far); re-opening (prior size: 31561.4 KB)
+0080.553 (0) Created plugins zip (0) - 32133.4 KB in 80.5 s (399.2 KB/s) (sha1: 2cc858c9a71857fc067e432d59cf777b7a5d445a, sha256: b0ce582ad22be187644933249bbb1a0be4b3068087415de0568b295329cadb30)
+0080.557 (0) Beginning creation of dump of themes (split every: 400 MB)
+0080.690 (0) Total entities for the zip file: 85 directories, 417 files (0 skipped as non-modified), 9.1 MB
+0082.010 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0083.090 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0083.478 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (6.6 MB, 282 (282) files added so far); re-opening (prior size: 0 KB)
+0084.910 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-themes.zip.tmp: 300 files added (on-disk size: 4314.9 KB)
+0085.575 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-themes.zip.tmp: 400 files added (on-disk size: 4314.9 KB)
+0085.852 (0) Created themes zip (0) - 6024.4 KB in 5.3 s (1138.2 KB/s) (sha1: 803f78678108c0bb2631f4c4629f292be11b39cf, sha256: 4b464a662efb5dc309f04179f9bc2029bbb78cbc70480d0461e4e66f50ebb264)
+0085.856 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0085.856 (0) Looking for candidates to backup in: E:\Wamp\www\Dranimaco\wordpress/wp-content/uploads
+0085.857 (0) finding files: 2020: adding to list (1)
+0085.858 (0) finding files: themeisle-gutenberg: adding to list (2)
+0085.859 (0) finding files: wc-logs: adding to list (3)
+0085.860 (0) finding files: woocommerce-placeholder-100x100.png: adding to list (4)
+0085.860 (0) finding files: woocommerce-placeholder-1024x1024.png: adding to list (5)
+0085.861 (0) finding files: woocommerce-placeholder-150x150.png: adding to list (6)
+0085.862 (0) finding files: woocommerce-placeholder-174x174.png: adding to list (7)
+0085.863 (0) finding files: woocommerce-placeholder-250x250.png: adding to list (8)
+0085.864 (0) finding files: woocommerce-placeholder-285x214.png: adding to list (9)
+0085.864 (0) finding files: woocommerce-placeholder-300x300.png: adding to list (10)
+0085.865 (0) finding files: woocommerce-placeholder-400x200.png: adding to list (11)
+0085.866 (0) finding files: woocommerce-placeholder-600x300.png: adding to list (12)
+0085.867 (0) finding files: woocommerce-placeholder-600x600.png: adding to list (13)
+0085.868 (0) finding files: woocommerce-placeholder-750x500.png: adding to list (14)
+0085.868 (0) finding files: woocommerce-placeholder-768x768.png: adding to list (15)
+0085.869 (0) finding files: woocommerce-placeholder.png: adding to list (16)
+0085.870 (0) finding files: woocommerce_uploads: adding to list (17)
+0085.871 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0086.114 (0) Total entities for the zip file: 6 directories, 733 files (0 skipped as non-modified), 85.6 MB
+0087.727 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0088.480 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (15.7 MB, 151 (151) files added so far); re-opening (prior size: 0 KB)
+0090.033 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-uploads.zip.tmp: 200 files added (on-disk size: 16062 KB)
+0091.277 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-uploads.zip.tmp: 300 files added (on-disk size: 16062 KB)
+0091.477 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (15.2 MB, 167 (318) files added so far); re-opening (prior size: 16062 KB)
+0093.591 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-uploads.zip.tmp: 400 files added (on-disk size: 31686 KB)
+0094.474 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (10.7 MB, 138 (456) files added so far); re-opening (prior size: 31686 KB)
+0095.628 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-uploads.zip.tmp: 500 files added (on-disk size: 42680.4 KB)
+0097.109 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-uploads.zip.tmp: 600 files added (on-disk size: 42680.4 KB)
+0097.476 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (24.8 MB, 172 (628) files added so far); re-opening (prior size: 42680.4 KB)
+0100.134 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-uploads.zip.tmp: 700 files added (on-disk size: 68075.5 KB)
+0101.840 (0) Created uploads zip (0) - 87783.1 KB in 16 s (5497.8 KB/s) (sha1: 323f07a1ed5693480086711fe34af3db316e9cce, sha256: 80924f3eb5f4c11e7e81cf1d43c76d848ed447d988216a879dd40de84c8cd583)
+0101.843 (0) Beginning backup of other directories found in the content directory (index: 0)
+0101.844 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0101.845 (0) Looking for candidates to backup in: E:\Wamp\www\Dranimaco\wordpress/wp-content
+0101.846 (0) finding files: index.php: adding to list (1)
+0101.847 (0) finding files: languages: adding to list (2)
+0101.848 (0) finding files: plugins: skipping: this is the plugins directory
+0101.848 (0) finding files: themes: skipping: this is the themes directory
+0101.849 (0) finding files: updraft: skipping: this is the updraft directory
+0101.850 (0) finding files: upgrade: skipping: excluded by options
+0101.851 (0) finding files: uploads: skipping: this is the uploads directory
+0101.954 (0) Total entities for the zip file: 3 directories, 383 files (0 skipped as non-modified), 5.6 MB
+0102.281 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-others.zip.tmp: 100 files added (on-disk size: 0 KB)
+0102.829 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-others.zip.tmp: 200 files added (on-disk size: 0 KB)
+0103.354 (0) Zip: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-others.zip.tmp: 300 files added (on-disk size: 0 KB)
+0104.393 (0) Created others zip (0) - 1679.3 KB in 2.5 s (661.2 KB/s) (sha1: 8e5d37a6f34bbc413d8f6957e5f25500ec97c171, sha256: d85b502cc1b92e281c5df6baebd84448af37a7f37b9a8050cb35a3072d115afd)
+0104.426 (0) Saving backup status to database (elements: 8)
+0104.430 (0) Beginning creation of database dump (WordPress DB)
+0104.433 (0) SQL compatibility mode is: NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER
+0104.820 (0) Table wp_options: Total expected rows (approximate): 635
+0104.925 (0) Table wp_options: Rows added in this batch (next record: 3649): 631 (uncompressed bytes in this segment=963023) in 0.10 seconds
+0104.938 (0) Table wp_options: finishing file(s) (2, 218.6 KB)
+0104.941 (0) Table wp_users: Total expected rows (approximate): 2
+0104.944 (0) Table wp_users: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=1547) in 0.00 seconds
+0104.953 (0) Table wp_users: finishing file(s) (2, 0.7 KB)
+0104.955 (0) Table wp_usermeta: Total expected rows (approximate): 68
+0104.959 (0) Table wp_usermeta: Rows added in this batch (next record: 96): 68 (uncompressed bytes in this segment=15891) in 0.00 seconds
+0104.969 (0) Table wp_usermeta: finishing file(s) (2, 4 KB)
+0104.972 (0) Table wp_actionscheduler_actions: Total expected rows (approximate): 11
+0104.975 (0) Table wp_actionscheduler_actions: Rows added in this batch (next record: 16): 11 (uncompressed bytes in this segment=5071) in 0.00 seconds
+0104.984 (0) Table wp_actionscheduler_actions: finishing file(s) (2, 1 KB)
+0104.987 (0) Table wp_actionscheduler_claims: Total expected rows (approximate): 0
+0104.988 (0) Table wp_actionscheduler_claims: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=635) in 0.00 seconds
+0104.997 (0) Table wp_actionscheduler_claims: finishing file(s) (2, 0.4 KB)
+0105.000 (0) Table wp_actionscheduler_groups: Total expected rows (approximate): 2
+0105.002 (0) Table wp_actionscheduler_groups: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=712) in 0.00 seconds
+0105.012 (0) Table wp_actionscheduler_groups: finishing file(s) (2, 0.4 KB)
+0105.019 (0) Table wp_actionscheduler_logs: Total expected rows (approximate): 33
+0105.022 (0) Table wp_actionscheduler_logs: Rows added in this batch (next record: 33): 33 (uncompressed bytes in this segment=3681) in 0.00 seconds
+0105.032 (0) Table wp_actionscheduler_logs: finishing file(s) (2, 0.8 KB)
+0105.034 (0) Table wp_commentmeta: Total expected rows (approximate): 18
+0105.037 (0) Table wp_commentmeta: Rows added in this batch (next record: 18): 18 (uncompressed bytes in this segment=1339) in 0.00 seconds
+0105.046 (0) Table wp_commentmeta: finishing file(s) (2, 0.6 KB)
+0105.049 (0) Table wp_comments: Total expected rows (approximate): 9
+0105.053 (0) Table wp_comments: Rows added in this batch (next record: 9): 9 (uncompressed bytes in this segment=4568) in 0.00 seconds
+0105.178 (0) Table wp_comments: finishing file(s) (2, 1.3 KB)
+0105.229 (0) Table wp_links: Total expected rows (approximate): 0
+0105.234 (0) Table wp_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1310) in 0.00 seconds
+0105.249 (0) Table wp_links: finishing file(s) (2, 0.5 KB)
+0105.253 (0) Table wp_postmeta: Total expected rows (approximate): 905
+0105.282 (0) Table wp_postmeta: Rows added in this batch (next record: 999): 905 (uncompressed bytes in this segment=186172) in 0.03 seconds
+0105.292 (0) Table wp_postmeta: finishing file(s) (2, 16 KB)
+0105.295 (0) Table wp_posts: Total expected rows (approximate): 240
+0105.369 (0) Table wp_posts: Rows added in this batch (next record: 251): 240 (uncompressed bytes in this segment=620691) in 0.07 seconds
+0105.380 (0) Table wp_posts: finishing file(s) (2, 25.2 KB)
+0105.383 (0) Table wp_term_relationships: Total expected rows (approximate): 94
+0105.386 (0) Table wp_term_relationships: Rows added in this batch (next record: 100000): 94 (uncompressed bytes in this segment=2023) in 0.00 seconds
+0105.395 (0) Table wp_term_relationships: finishing file(s) (2, 0.6 KB)
+0105.398 (0) Table wp_term_taxonomy: Total expected rows (approximate): 52
+0105.403 (0) Table wp_term_taxonomy: Rows added in this batch (next record: 52): 52 (uncompressed bytes in this segment=3362) in 0.00 seconds
+0105.413 (0) Table wp_term_taxonomy: finishing file(s) (2, 0.9 KB)
+0105.416 (0) Table wp_termmeta: Total expected rows (approximate): 62
+0105.420 (0) Table wp_termmeta: Rows added in this batch (next record: 62): 62 (uncompressed bytes in this segment=3131) in 0.00 seconds
+0105.430 (0) Table wp_termmeta: finishing file(s) (2, 0.8 KB)
+0105.433 (0) Table wp_terms: Total expected rows (approximate): 52
+0105.436 (0) Table wp_terms: Rows added in this batch (next record: 52): 52 (uncompressed bytes in this segment=2608) in 0.00 seconds
+0105.446 (0) Table wp_terms: finishing file(s) (2, 1 KB)
+0105.471 (0) Table wp_wc_category_lookup: Total expected rows (approximate): 1
+0105.473 (0) Table wp_wc_category_lookup: Rows added in this batch (next record: 1000): 1 (uncompressed bytes in this segment=589) in 0.00 seconds
+0105.482 (0) Table wp_wc_category_lookup: finishing file(s) (2, 0.3 KB)
+0105.485 (0) Table wp_wc_product_meta_lookup: Total expected rows (approximate): 12
+0105.488 (0) Table wp_wc_product_meta_lookup: Rows added in this batch (next record: 197): 12 (uncompressed bytes in this segment=2457) in 0.00 seconds
+0105.498 (0) Table wp_wc_product_meta_lookup: finishing file(s) (2, 0.7 KB)
+0105.509 (0) Table wp_wc_reserved_stock: Total expected rows (approximate): 0
+0105.511 (0) Table wp_wc_reserved_stock: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=665) in 0.00 seconds
+0105.521 (0) Table wp_wc_reserved_stock: finishing file(s) (2, 0.4 KB)
+0105.523 (0) Table wp_wc_tax_rate_classes: Total expected rows (approximate): 4
+0105.526 (0) Table wp_wc_tax_rate_classes: Rows added in this batch (next record: 4): 4 (uncompressed bytes in this segment=884) in 0.00 seconds
+0105.537 (0) Table wp_wc_tax_rate_classes: finishing file(s) (2, 0.5 KB)
+0105.540 (0) Table wp_woocommerce_order_itemmeta: Total expected rows (approximate): 27
+0105.562 (0) Table wp_woocommerce_order_itemmeta: Rows added in this batch (next record: 27): 27 (uncompressed bytes in this segment=1811) in 0.02 seconds
+0105.572 (0) Table wp_woocommerce_order_itemmeta: finishing file(s) (2, 0.6 KB)
+0105.602 (0) Table wp_woocommerce_payment_tokenmeta: Total expected rows (approximate): 0
+0105.604 (0) Table wp_woocommerce_payment_tokenmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=798) in 0.00 seconds
+0105.613 (0) Table wp_woocommerce_payment_tokenmeta: finishing file(s) (2, 0.4 KB)
+0105.634 (0) Table wp_mailchimp_carts: Total expected rows (approximate): 0
+0105.636 (0) Table wp_mailchimp_carts: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=643) in 0.00 seconds
+0105.645 (0) Table wp_mailchimp_carts: finishing file(s) (2, 0.3 KB)
+0105.659 (0) Table wp_mailchimp_jobs: Total expected rows (approximate): 0
+0105.661 (0) Table wp_mailchimp_jobs: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=565) in 0.00 seconds
+0105.670 (0) Table wp_mailchimp_jobs: finishing file(s) (2, 0.3 KB)
+0105.704 (0) Table wp_skrill_transaction_log: Total expected rows (approximate): 2
+0105.707 (0) Table wp_skrill_transaction_log: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=1592) in 0.00 seconds
+0105.718 (0) Table wp_skrill_transaction_log: finishing file(s) (2, 0.6 KB)
+0105.721 (0) Table wp_wc_admin_note_actions: Total expected rows (approximate): 21
+0105.724 (0) Table wp_wc_admin_note_actions: Rows added in this batch (next record: 240): 21 (uncompressed bytes in this segment=3922) in 0.00 seconds
+0105.733 (0) Table wp_wc_admin_note_actions: finishing file(s) (2, 1.4 KB)
+0105.736 (0) Table wp_wc_admin_notes: Total expected rows (approximate): 19
+0105.740 (0) Table wp_wc_admin_notes: Rows added in this batch (next record: 19): 19 (uncompressed bytes in this segment=9837) in 0.00 seconds
+0105.751 (0) Table wp_wc_admin_notes: finishing file(s) (2, 3.3 KB)
+0105.758 (0) Table wp_wc_customer_lookup: Total expected rows (approximate): 2
+0105.760 (0) Table wp_wc_customer_lookup: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=1575) in 0.00 seconds
+0105.769 (0) Table wp_wc_customer_lookup: finishing file(s) (2, 0.6 KB)
+0105.817 (0) Table wp_wc_download_log: Total expected rows (approximate): 0
+0105.819 (0) Table wp_wc_download_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=747) in 0.00 seconds
+0105.828 (0) Table wp_wc_download_log: finishing file(s) (2, 0.4 KB)
+0105.836 (0) Table wp_wc_order_coupon_lookup: Total expected rows (approximate): 0
+0105.838 (0) Table wp_wc_order_coupon_lookup: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=717) in 0.00 seconds
+0105.847 (0) Table wp_wc_order_coupon_lookup: finishing file(s) (2, 0.4 KB)
+0105.858 (0) Table wp_wc_order_product_lookup: Total expected rows (approximate): 3
+0105.861 (0) Table wp_wc_order_product_lookup: Rows added in this batch (next record: 3): 3 (uncompressed bytes in this segment=1528) in 0.00 seconds
+0105.871 (0) Table wp_wc_order_product_lookup: finishing file(s) (2, 0.6 KB)
+0105.874 (0) Table wp_wc_order_stats: Total expected rows (approximate): 3
+0105.877 (0) Table wp_wc_order_stats: Rows added in this batch (next record: 201): 3 (uncompressed bytes in this segment=1485) in 0.00 seconds
+0105.886 (0) Table wp_wc_order_stats: finishing file(s) (2, 0.6 KB)
+0105.910 (0) Table wp_wc_order_tax_lookup: Total expected rows (approximate): 0
+0105.912 (0) Table wp_wc_order_tax_lookup: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=799) in 0.00 seconds
+0105.921 (0) Table wp_wc_order_tax_lookup: finishing file(s) (2, 0.4 KB)
+0105.934 (0) Table wp_wc_webhooks: Total expected rows (approximate): 0
+0105.936 (0) Table wp_wc_webhooks: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1230) in 0.00 seconds
+0105.945 (0) Table wp_wc_webhooks: finishing file(s) (2, 0.5 KB)
+0105.959 (0) Table wp_woocommerce_api_keys: Total expected rows (approximate): 0
+0105.961 (0) Table wp_woocommerce_api_keys: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1046) in 0.00 seconds
+0105.971 (0) Table wp_woocommerce_api_keys: finishing file(s) (2, 0.5 KB)
+0105.992 (0) Table wp_woocommerce_attribute_taxonomies: Total expected rows (approximate): 0
+0105.997 (0) Table wp_woocommerce_attribute_taxonomies: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=961) in 0.00 seconds
+0106.011 (0) Table wp_woocommerce_attribute_taxonomies: finishing file(s) (2, 0.4 KB)
+0106.043 (0) Table wp_woocommerce_downloadable_product_permissions: Total expected rows (approximate): 0
+0106.045 (0) Table wp_woocommerce_downloadable_product_permissions: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1538) in 0.00 seconds
+0106.056 (0) Table wp_woocommerce_downloadable_product_permissions: finishing file(s) (2, 0.5 KB)
+0106.064 (0) Table wp_woocommerce_log: Total expected rows (approximate): 0
+0106.066 (0) Table wp_woocommerce_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=722) in 0.00 seconds
+0106.076 (0) Table wp_woocommerce_log: finishing file(s) (2, 0.4 KB)
+0106.078 (0) Table wp_woocommerce_order_items: Total expected rows (approximate): 3
+0106.081 (0) Table wp_woocommerce_order_items: Rows added in this batch (next record: 3): 3 (uncompressed bytes in this segment=952) in 0.00 seconds
+0106.090 (0) Table wp_woocommerce_order_items: finishing file(s) (2, 0.5 KB)
+0106.097 (0) Table wp_woocommerce_payment_tokens: Total expected rows (approximate): 0
+0106.099 (0) Table wp_woocommerce_payment_tokens: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=841) in 0.00 seconds
+0106.108 (0) Table wp_woocommerce_payment_tokens: finishing file(s) (2, 0.4 KB)
+0106.111 (0) Table wp_woocommerce_sessions: Total expected rows (approximate): 1
+0106.113 (0) Table wp_woocommerce_sessions: Rows added in this batch (next record: 28): 1 (uncompressed bytes in this segment=3748) in 0.00 seconds
+0106.123 (0) Table wp_woocommerce_sessions: finishing file(s) (2, 1.3 KB)
+0106.131 (0) Table wp_woocommerce_shipping_zone_locations: Total expected rows (approximate): 0
+0106.133 (0) Table wp_woocommerce_shipping_zone_locations: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=874) in 0.00 seconds
+0106.142 (0) Table wp_woocommerce_shipping_zone_locations: finishing file(s) (2, 0.4 KB)
+0106.163 (0) Table wp_woocommerce_shipping_zone_methods: Total expected rows (approximate): 0
+0106.165 (0) Table wp_woocommerce_shipping_zone_methods: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=775) in 0.00 seconds
+0106.174 (0) Table wp_woocommerce_shipping_zone_methods: finishing file(s) (2, 0.4 KB)
+0106.204 (0) Table wp_woocommerce_shipping_zones: Total expected rows (approximate): 0
+0106.206 (0) Table wp_woocommerce_shipping_zones: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=633) in 0.00 seconds
+0106.216 (0) Table wp_woocommerce_shipping_zones: finishing file(s) (2, 0.4 KB)
+0106.219 (0) Table wp_woocommerce_tax_rate_locations: Total expected rows (approximate): 0
+0106.221 (0) Table wp_woocommerce_tax_rate_locations: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=848) in 0.00 seconds
+0106.231 (0) Table wp_woocommerce_tax_rate_locations: finishing file(s) (2, 0.4 KB)
+0106.234 (0) Table wp_woocommerce_tax_rates: Total expected rows (approximate): 0
+0106.236 (0) Table wp_woocommerce_tax_rates: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1301) in 0.00 seconds
+0106.245 (0) Table wp_woocommerce_tax_rates: finishing file(s) (2, 0.5 KB)
+0106.248 (0) Table wp_yith_wcwl: Total expected rows (approximate): 2
+0106.250 (0) Table wp_yith_wcwl: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=944) in 0.00 seconds
+0106.259 (0) Table wp_yith_wcwl: finishing file(s) (2, 0.5 KB)
+0106.262 (0) Table wp_yith_wcwl_lists: Total expected rows (approximate): 1
+0106.265 (0) Table wp_yith_wcwl_lists: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1014) in 0.00 seconds
+0106.275 (0) Table wp_yith_wcwl_lists: finishing file(s) (2, 0.5 KB)
+0106.277 (0) Table wp_yoast_indexable: Total expected rows (approximate): 165
+0106.318 (0) Table wp_yoast_indexable: Rows added in this batch (next record: 171): 165 (uncompressed bytes in this segment=80043) in 0.04 seconds
+0106.329 (0) Table wp_yoast_indexable: finishing file(s) (2, 11.7 KB)
+0106.332 (0) Table wp_yoast_indexable_hierarchy: Total expected rows (approximate): 17
+0106.334 (0) Table wp_yoast_indexable_hierarchy: Rows added in this batch (next record: 1000): 17 (uncompressed bytes in this segment=1093) in 0.00 seconds
+0106.343 (0) Table wp_yoast_indexable_hierarchy: finishing file(s) (2, 0.5 KB)
+0106.372 (0) Table wp_yoast_migrations: Total expected rows (approximate): 18
+0106.374 (0) Table wp_yoast_migrations: Rows added in this batch (next record: 18): 18 (uncompressed bytes in this segment=1074) in 0.00 seconds
+0106.384 (0) Table wp_yoast_migrations: finishing file(s) (2, 0.6 KB)
+0106.391 (0) Table wp_yoast_primary_term: Total expected rows (approximate): 5
+0106.394 (0) Table wp_yoast_primary_term: Rows added in this batch (next record: 5): 5 (uncompressed bytes in this segment=1313) in 0.00 seconds
+0106.403 (0) Table wp_yoast_primary_term: finishing file(s) (2, 0.6 KB)
+0106.406 (0) Table wp_yoast_seo_links: Total expected rows (approximate): 23
+0106.410 (0) Table wp_yoast_seo_links: Rows added in this batch (next record: 27): 23 (uncompressed bytes in this segment=4253) in 0.00 seconds
+0106.419 (0) Table wp_yoast_seo_links: finishing file(s) (2, 1.1 KB)
+0106.421 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_options.table.tmpr3650.gz (1/53): adding to final database dump
+0106.456 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_options.table.gz (2/53): adding to final database dump
+0106.457 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_users.table.tmpr3.gz (3/53): adding to final database dump
+0106.458 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_users.table.gz (4/53): adding to final database dump
+0106.459 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_usermeta.table.tmpr97.gz (5/53): adding to final database dump
+0106.460 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_usermeta.table.gz (6/53): adding to final database dump
+0106.461 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_actionscheduler_actions.table.tmpr17.gz (7/53): adding to final database dump
+0106.463 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_actionscheduler_actions.table.gz (8/53): adding to final database dump
+0106.464 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_actionscheduler_claims.table.tmpr0.gz (9/53): adding to final database dump
+0106.465 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_actionscheduler_claims.table.gz (10/53): adding to final database dump
+0106.466 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_actionscheduler_groups.table.tmpr3.gz (11/53): adding to final database dump
+0106.467 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_actionscheduler_groups.table.gz (12/53): adding to final database dump
+0106.468 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_actionscheduler_logs.table.tmpr34.gz (13/53): adding to final database dump
+0106.469 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_actionscheduler_logs.table.gz (14/53): adding to final database dump
+0106.470 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_commentmeta.table.tmpr19.gz (15/53): adding to final database dump
+0106.471 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_commentmeta.table.gz (16/53): adding to final database dump
+0106.472 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_comments.table.tmpr10.gz (17/53): adding to final database dump
+0106.473 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_comments.table.gz (18/53): adding to final database dump
+0106.474 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_links.table.tmpr0.gz (19/53): adding to final database dump
+0106.475 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_links.table.gz (20/53): adding to final database dump
+0106.476 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_postmeta.table.tmpr1000.gz (21/53): adding to final database dump
+0106.483 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_postmeta.table.gz (22/53): adding to final database dump
+0106.484 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_posts.table.tmpr252.gz (23/53): adding to final database dump
+0106.492 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_posts.table.gz (24/53): adding to final database dump
+0106.493 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_term_relationships.table.tmpr100001.gz (25/53): adding to final database dump
+0106.494 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_term_relationships.table.gz (26/53): adding to final database dump
+0106.495 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_term_taxonomy.table.tmpr53.gz (27/53): adding to final database dump
+0106.496 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_term_taxonomy.table.gz (28/53): adding to final database dump
+0106.497 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_termmeta.table.tmpr63.gz (29/53): adding to final database dump
+0106.499 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_termmeta.table.gz (30/53): adding to final database dump
+0106.499 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_terms.table.tmpr53.gz (31/53): adding to final database dump
+0106.501 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_terms.table.gz (32/53): adding to final database dump
+0106.502 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_wc_category_lookup.table.tmpr1001.gz (33/53): adding to final database dump
+0106.503 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_wc_category_lookup.table.gz (34/53): adding to final database dump
+0106.504 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_wc_product_meta_lookup.table.tmpr198.gz (35/53): adding to final database dump
+0106.505 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_wc_product_meta_lookup.table.gz (36/53): adding to final database dump
+0106.506 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_wc_reserved_stock.table.tmpr1.gz (37/53): adding to final database dump
+0106.506 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_wc_reserved_stock.table.gz (38/53): adding to final database dump
+0106.507 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_wc_tax_rate_classes.table.tmpr5.gz (39/53): adding to final database dump
+0106.508 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_wc_tax_rate_classes.table.gz (40/53): adding to final database dump
+0106.509 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_woocommerce_order_itemmeta.table.tmpr28.gz (41/53): adding to final database dump
+0106.510 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_woocommerce_order_itemmeta.table.gz (42/53): adding to final database dump
+0106.511 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_woocommerce_payment_tokenmeta.table.tmpr0.gz (43/53): adding to final database dump
+0106.512 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_woocommerce_payment_tokenmeta.table.gz (44/53): adding to final database dump
+0106.513 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_mailchimp_carts.table.tmpr1.gz (45/53): adding to final database dump
+0106.514 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_mailchimp_carts.table.gz (46/53): adding to final database dump
+0106.515 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_mailchimp_jobs.table.tmpr0.gz (47/53): adding to final database dump
+0106.516 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_mailchimp_jobs.table.gz (48/53): adding to final database dump
+0106.517 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_skrill_transaction_log.table.tmpr3.gz (49/53): adding to final database dump
+0106.518 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_skrill_transaction_log.table.gz (50/53): adding to final database dump
+0106.519 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_wc_admin_note_actions.table.tmpr241.gz (51/53): adding to final database dump
+0106.520 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_wc_admin_note_actions.table.gz (52/53): adding to final database dump
+0106.521 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_wc_admin_notes.table.tmpr20.gz (53/53): adding to final database dump
+0106.523 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_wc_admin_notes.table.gz (54/53): adding to final database dump
+0106.524 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_wc_customer_lookup.table.tmpr3.gz (55/53): adding to final database dump
+0106.525 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_wc_customer_lookup.table.gz (56/53): adding to final database dump
+0106.525 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_wc_download_log.table.tmpr0.gz (57/53): adding to final database dump
+0106.526 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_wc_download_log.table.gz (58/53): adding to final database dump
+0106.527 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_wc_order_coupon_lookup.table.tmpr1.gz (59/53): adding to final database dump
+0106.528 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_wc_order_coupon_lookup.table.gz (60/53): adding to final database dump
+0106.529 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_wc_order_product_lookup.table.tmpr4.gz (61/53): adding to final database dump
+0106.530 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_wc_order_product_lookup.table.gz (62/53): adding to final database dump
+0106.531 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_wc_order_stats.table.tmpr202.gz (63/53): adding to final database dump
+0106.532 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_wc_order_stats.table.gz (64/53): adding to final database dump
+0106.533 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_wc_order_tax_lookup.table.tmpr1.gz (65/53): adding to final database dump
+0106.534 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_wc_order_tax_lookup.table.gz (66/53): adding to final database dump
+0106.535 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_wc_webhooks.table.tmpr0.gz (67/53): adding to final database dump
+0106.536 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_wc_webhooks.table.gz (68/53): adding to final database dump
+0106.537 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_woocommerce_api_keys.table.tmpr0.gz (69/53): adding to final database dump
+0106.538 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_woocommerce_api_keys.table.gz (70/53): adding to final database dump
+0106.539 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_woocommerce_attribute_taxonomies.table.tmpr0.gz (71/53): adding to final database dump
+0106.540 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_woocommerce_attribute_taxonomies.table.gz (72/53): adding to final database dump
+0106.540 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_woocommerce_downloadable_product_permissions.table.tmpr0.gz (73/53): adding to final database dump
+0106.541 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_woocommerce_downloadable_product_permissions.table.gz (74/53): adding to final database dump
+0106.542 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_woocommerce_log.table.tmpr0.gz (75/53): adding to final database dump
+0106.543 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_woocommerce_log.table.gz (76/53): adding to final database dump
+0106.544 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_woocommerce_order_items.table.tmpr4.gz (77/53): adding to final database dump
+0106.545 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_woocommerce_order_items.table.gz (78/53): adding to final database dump
+0106.546 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_woocommerce_payment_tokens.table.tmpr0.gz (79/53): adding to final database dump
+0106.547 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_woocommerce_payment_tokens.table.gz (80/53): adding to final database dump
+0106.548 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_woocommerce_sessions.table.tmpr29.gz (81/53): adding to final database dump
+0106.549 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_woocommerce_sessions.table.gz (82/53): adding to final database dump
+0106.550 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_woocommerce_shipping_zone_locations.table.tmpr0.gz (83/53): adding to final database dump
+0106.551 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_woocommerce_shipping_zone_locations.table.gz (84/53): adding to final database dump
+0106.552 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_woocommerce_shipping_zone_methods.table.tmpr0.gz (85/53): adding to final database dump
+0106.553 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_woocommerce_shipping_zone_methods.table.gz (86/53): adding to final database dump
+0106.554 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_woocommerce_shipping_zones.table.tmpr0.gz (87/53): adding to final database dump
+0106.555 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_woocommerce_shipping_zones.table.gz (88/53): adding to final database dump
+0106.555 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_woocommerce_tax_rate_locations.table.tmpr0.gz (89/53): adding to final database dump
+0106.556 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_woocommerce_tax_rate_locations.table.gz (90/53): adding to final database dump
+0106.557 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_woocommerce_tax_rates.table.tmpr0.gz (91/53): adding to final database dump
+0106.558 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_woocommerce_tax_rates.table.gz (92/53): adding to final database dump
+0106.559 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_yith_wcwl.table.tmpr3.gz (93/53): adding to final database dump
+0106.560 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_yith_wcwl.table.gz (94/53): adding to final database dump
+0106.561 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_yith_wcwl_lists.table.tmpr2.gz (95/53): adding to final database dump
+0106.562 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_yith_wcwl_lists.table.gz (96/53): adding to final database dump
+0106.563 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_yoast_indexable.table.tmpr172.gz (97/53): adding to final database dump
+0106.566 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_yoast_indexable.table.gz (98/53): adding to final database dump
+0106.567 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_yoast_indexable_hierarchy.table.tmpr1001.gz (99/53): adding to final database dump
+0106.569 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_yoast_indexable_hierarchy.table.gz (100/53): adding to final database dump
+0106.570 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_yoast_migrations.table.tmpr19.gz (101/53): adding to final database dump
+0106.571 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_yoast_migrations.table.gz (102/53): adding to final database dump
+0106.572 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_yoast_primary_term.table.tmpr6.gz (103/53): adding to final database dump
+0106.573 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_yoast_primary_term.table.gz (104/53): adding to final database dump
+0106.574 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_yoast_seo_links.table.tmpr28.gz (105/53): adding to final database dump
+0106.575 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db-table-wp_yoast_seo_links.table.gz (106/53): adding to final database dump
+0106.671 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db.gz: finished writing out complete database file (280 KB)
+0106.695 (0) Total database tables backed up: 53 (backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db.gz, size: 297867, sha1: 0e627708e2d51bb9467a9510696d0b052d8db558, sha256: caf4affdecc043958628b75ec91233697391fadd6360fcce3b1f600e82592268)
+0106.700 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0106.701 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0106.702 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0106.702 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-others.zip: others: This file has not yet been successfully uploaded: will queue
+0106.703 (0) backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db.gz: db: This file has not yet been successfully uploaded: will queue
+0106.704 (0) Saving backup history. Total backup size: 124.9 MB
+0106.706 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0106.709 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0106.709 (0) No remote despatch: user chose no remote backup service
+0106.710 (0) Recording as successfully uploaded: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-plugins.zip
+0106.712 (0) Recording as successfully uploaded: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-themes.zip
+0106.713 (0) Recording as successfully uploaded: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-uploads.zip
+0106.715 (0) Recording as successfully uploaded: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-others.zip
+0106.716 (0) Recording as successfully uploaded: backup_2020-12-01-2038_Dranimaco_c5e620d61c70-db.gz
+0106.720 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0106.721 (0) Number of backup sets in history: 1; groups (db): 1
+0106.722 (0) Examining (for databases) backup set with group_id=0, nonce=c5e620d61c70, datestamp=1606851532 (Dec 01 2020 19:38:52)
+0106.722 (0) This backup set is the backup set just made, so will not be deleted.
+0106.722 (0) Number of backup sets in history: 1; groups (files): 1
+0106.723 (0) Examining (for files) backup set with nonce=c5e620d61c70, datestamp=1606851532 (Dec 01 2020 19:38:52)
+0106.723 (0) This backup set is the backup set just made, so will not be deleted.
+0106.724 (0) This backup set is the backup set just made, so will not be deleted.
+0106.724 (0) This backup set is the backup set just made, so will not be deleted.
+0106.724 (0) This backup set is the backup set just made, so will not be deleted.
+0106.725 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0106.725 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0106.728 (0) Resume backup (c5e620d61c70, 0): finish run
+0106.756 (0) Decremented the semaphore (fd) by 1
+0106.757 (0) Semaphore (fd) unlocked
+0106.758 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0106.761 (0) No email will/can be sent - the user has not configured an email address.
+0106.762 (0) The backup apparently succeeded and is now complete

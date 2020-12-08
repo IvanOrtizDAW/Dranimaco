@@ -15,7 +15,7 @@ final class WOOCS_STORAGE {
             $this->type = $type;
         }
         if ($this->type == 'woo_session') {
-            $this->type = 'session';
+           $this->type = 'session' ;
         }
         if ($this->type == 'session') {
             if (!session_id()) {
@@ -25,7 +25,7 @@ final class WOOCS_STORAGE {
 
 
         $this->user_ip = filter_var($_SERVER['REMOTE_ADDR'], FILTER_VALIDATE_IP);
-        $this->transient_key = substr(md5($this->user_ip), 7, 23);
+        $this->transient_key = md5($this->user_ip);
     }
 
     public function set_val($key, $value) {
@@ -49,20 +49,6 @@ final class WOOCS_STORAGE {
                 break;
             case 'session':
                 $_SESSION[$key] = $value;
-                break;
-            case 'memcached':
-                if (class_exists('Memcached')) {
-                    $mem = new Memcached();
-                    $mem->addServer(WOOCS_MEMCACHED_SERVER, WOOCS_MEMCACHED_PORT);
-                    $mem->set($this->transient_key . '_' . $key, $value);
-                }
-                break;
-            case 'redis':
-                if (class_exists('Redis')) {
-                    $red = new Redis();
-                    $red->connect(WOOCS_REDIS_SERVER, WOOCS_REDIS_PORT);
-                    $red->set($this->transient_key . '_' . $key, $value);
-                }
                 break;
             case 'transient':
                 $data = get_transient($this->transient_key);
@@ -95,20 +81,6 @@ final class WOOCS_STORAGE {
             case 'session':
                 if ($this->is_isset($key)) {
                     $value = $_SESSION[$key];
-                }
-                break;
-            case 'memcached':
-                if ($this->is_isset($key) AND class_exists('Memcached')) {
-                    $mem = new Memcached();
-                    $mem->addServer(WOOCS_MEMCACHED_SERVER, WOOCS_MEMCACHED_PORT);
-                    $value = $mem->get($this->transient_key . '_' . $key);
-                }
-                break;
-            case 'redis':
-                if ($this->is_isset($key) AND class_exists('Redis')) {
-                    $red = new Redis();
-                    $red->connect(WOOCS_REDIS_SERVER, WOOCS_REDIS_PORT);
-                    $value = $red->get($this->transient_key . '_' . $key);
                 }
                 break;
             case 'transient':
@@ -144,27 +116,14 @@ final class WOOCS_STORAGE {
             case 'session':
                 $isset = isset($_SESSION[$key]);
                 break;
-            case 'memcached':
-                $isset = false;
-                if (class_exists('Memcached')) {
-                    $mem = new Memcached();
-                    $mem->addServer(WOOCS_MEMCACHED_SERVER, WOOCS_MEMCACHED_PORT);
-                    $isset = boolval($mem->get($this->transient_key . '_' . $key) !== false && $mem->getResultCode() !== Memcached::RES_NOTFOUND);
-                }
-                break;
-            case 'redis':
-                $isset = false;
-                if (class_exists('Redis')) {
-                    $red = new Redis();
-                    $red->connect(WOOCS_REDIS_SERVER, WOOCS_REDIS_PORT);
-                    $isset = boolval($red->exists($this->transient_key . '_' . $key));
-                }
-                break;
             case 'transient':
                 $isset = (bool) $this->get_val($key);
                 break;
             case 'cookie':
                 $isset = isset($_COOKIE[$key]);
+                break;
+
+            default:
                 break;
         }
 

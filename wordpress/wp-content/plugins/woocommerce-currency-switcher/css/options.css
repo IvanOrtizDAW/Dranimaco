@@ -670,7 +670,6 @@ nav ul {  display: block; }
 
 .wfc-tabs .button{
     font-size: 14px;
-    border-radius: 0 !important;
 }
 
 .wfc-tabs .select2-container .select2-selection--multiple .select2-selection__choice{
@@ -692,7 +691,6 @@ nav ul {  display: block; }
 .wfc-tabs .select2-container--default .select2-selection--multiple .select2-selection__choice{
     background-color: #fff;
     border:1px solid #ddd;
-    border-radius: 0 !important;
 }
 
 .wfc-tabs label{
@@ -730,11 +728,10 @@ select{
 
 .woocs_finance_btn{
     vertical-align: top !important;
-    padding: 1px 4px 3px 7px !important;
+    padding: 3px 4px 3px 7px !important;
     box-shadow: none !important;
     border-color: #ddd !important;
     box-sizing: border-box !important;
-    border-radius: 0 !important;
 }
 
 .woocs-btn-delete{
@@ -987,6 +984,7 @@ a.woocs_settings_docs{
 .woocs-clear-all-in-select{
     text-decoration: none;
     font-size: 14px;
+    font-weight: bold;
 }
 
 .woocs-select-all-in-select:hover,
@@ -1071,7 +1069,6 @@ input[type=tel], input[type=text], input[type=time], input[type=url], input[type
 .select2-container .select2-selection--single,
 .wp-core-ui select{
     border-color: #ddd !important;
-    border-radius: 0 !important;
 }
 
 .woocs_curr_description{
@@ -1102,15 +1099,4 @@ input[type=tel], input[type=text], input[type=time], input[type=url], input[type
     font-size: 0.80em;
     margin-bottom: 4px;
 }
-
-
-.select2-selection.select2-selection--multiple{
-    border-radius: 0 !important;
-}
-
-.woocommerce-save-button{
-    padding: 4px 12px !important;
-    border-radius: 0 !important;
-}
-
 

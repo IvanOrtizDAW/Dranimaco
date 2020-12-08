@@ -5,8 +5,6 @@
  * @package WooCommerce\Shipping
  */
 
-use Automattic\WooCommerce\Utilities\NumberUtil;
-
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
@@ -195,9 +193,9 @@ class WC_Shipping_Legacy_Free_Shipping extends WC_Shipping_Method {
 			$total = WC()->cart->get_displayed_subtotal();
 
 			if ( WC()->cart->display_prices_including_tax() ) {
-				$total = NumberUtil::round( $total - ( WC()->cart->get_discount_total() + WC()->cart->get_discount_tax() ), wc_get_price_decimals() );
+				$total = round( $total - ( WC()->cart->get_discount_total() + WC()->cart->get_discount_tax() ), wc_get_price_decimals() );
 			} else {
-				$total = NumberUtil::round( $total - WC()->cart->get_discount_total(), wc_get_price_decimals() );
+				$total = round( $total - WC()->cart->get_discount_total(), wc_get_price_decimals() );
 			}
 
 			if ( $total >= $this->min_amount ) {

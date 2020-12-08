@@ -8,7 +8,7 @@
 
 /* globals yith_wcwl_l10n, wc_add_to_cart_params, yith_wccl_general */
 
-jQuery( function( $ ){
+jQuery( document ).ready( function( $ ){
 
     /* === MAIN INIT === */
 
@@ -465,10 +465,6 @@ jQuery( function( $ ){
                 }
             } );
 
-            if( ! yith_wcwl_l10n.reload_on_found_variation ) {
-                return;
-            }
-
             block( fragments );
 
             load_fragments( {
@@ -510,10 +506,6 @@ jQuery( function( $ ){
                         .attr('data-fragment-ref', product_id);
                 }
             } );
-
-            if( ! yith_wcwl_l10n.reload_on_found_variation ) {
-                return;
-            }
 
             block( fragments );
 
@@ -1782,4 +1774,4 @@ jQuery( function( $ ){
     function isTrue( value ) {
         return true === value || 'yes' === value || '1' === value || 1 === value;
     }
-} );
+});

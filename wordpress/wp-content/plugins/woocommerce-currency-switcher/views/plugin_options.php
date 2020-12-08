@@ -53,21 +53,6 @@ $aggregators = apply_filters('woocs_announce_aggregator', $aggregators);
         $pd = WC_Geolocation::geolocate_ip();
     }
     //+++
-
-
-    $storage_options = array(
-        'session' => esc_html__('PHP Session', 'woocommerce-currency-switcher'),
-        'transient' => esc_html__('Transient', 'woocommerce-currency-switcher')
-    );
-
-    if (class_exists('Memcached')) {
-        $storage_options['memcached'] = 'Memcached';
-    }
-
-    if (class_exists('Redis')) {
-        $storage_options['redis'] = 'Redis';
-    }
-
     $options = array(
         array(
             'name' => '',
@@ -107,32 +92,15 @@ $aggregators = apply_filters('woocs_announce_aggregator', $aggregators);
         ),
         array(
             'name' => esc_html__('Currency storage', 'woocommerce-currency-switcher'),
-            'desc' => esc_html__('In some servers there is troubles with sessions, and after currency selecting its reset to welcome currency or geo ip currency. In such case use transient. If it is possible on your hosting use Memcached or Redis!', 'woocommerce-currency-switcher'),
+            'desc' => esc_html__('In some servers there is troubles with sessions, and after currency selecting its reset to welcome currency or geo ip currency. In such case use transient!', 'woocommerce-currency-switcher'),
             'id' => 'woocs_storage',
             'type' => 'select',
             'class' => 'chosen_select',
             'css' => 'min-width:300px;',
-            'options' => $storage_options,
-            'desc_tip' => true
-        ),
-        array(
-            'name' => esc_html__('Storage server', 'woocommerce-currency-switcher'),
-            'desc' => esc_html__('Server or socket for: memcached or redis. Usually is localhost. Read your hosting documentation about what host to use for memcached or redis.', 'woocommerce-currency-switcher'),
-            'id' => 'woocs_storage_server',
-            'type' => 'text',
-            'std' => '', // WooCommerce < 2.0
-            'default' => '', // WooCommerce >= 2.0
-            'css' => 'min-width:300px;',
-            'desc_tip' => true
-        ),
-        array(
-            'name' => esc_html__('Storage port', 'woocommerce-currency-switcher'),
-            'desc' => esc_html__('Port for: memcached or redis. Usually for memcached port is 11211, for redis port is 6379. Read your hosting documentation about what port to use for memcached or redis.', 'woocommerce-currency-switcher'),
-            'id' => 'woocs_storage_port',
-            'type' => 'text',
-            'std' => '', // WooCommerce < 2.0
-            'default' => '', // WooCommerce >= 2.0
-            'css' => 'min-width:300px;',
+            'options' => array(
+                'session' => esc_html__('PHP Session', 'woocommerce-currency-switcher'),
+                'transient' => esc_html__('Transient', 'woocommerce-currency-switcher'),
+            ),
             'desc_tip' => true
         ),
         array(
@@ -1105,7 +1073,7 @@ $aggregators = apply_filters('woocs_announce_aggregator', $aggregators);
                                         <?php
                                         if (!empty($currencies) AND is_array($currencies)) {
                                             ?><select class="chosen_select woocs_profile_geoip_currency" style="width:100px;"  >
-                                                                                                        <!--<option value="-1" ><?php esc_html_e("Select currency...", 'woocommerce-currency-switcher'); ?></option> -->
+                                                                                <!--<option value="-1" ><?php esc_html_e("Select currency...", 'woocommerce-currency-switcher'); ?></option> -->
                                                 <?php
                                                 foreach ($currencies as $key => $currency) {
                                                     ?><option value="<?php echo $key ?>" ><?php echo $key ?></option><?php
@@ -1291,10 +1259,14 @@ $aggregators = apply_filters('woocs_announce_aggregator', $aggregators);
 
 
     <b class="woocs_hint" ><?php esc_html_e('Hint', 'woocommerce-currency-switcher'); ?>:</b>&nbsp;<?php esc_html_e('If you want let your customers pay in their selected currency in tab Advanced set the option Is multiple allowed to Yes.', 'woocommerce-currency-switcher'); ?><br />
-    <b class="woocs_hint" ><?php esc_html_e('Note', 'woocommerce-currency-switcher'); ?>:</b>&nbsp;<?php esc_html_e('Get free API keys:', 'woocommerce-currency-switcher'); ?>
-    &nbsp;<a href="https://free.currencyconverterapi.com/free-api-key"  target="_blank"><?php esc_html_e('The Free Currency Converter', 'woocommerce-currency-switcher'); ?></a>,
-    &nbsp;<a href="https://fixer.io/signup/free" target="_blank"><?php esc_html_e('Fixer', 'woocommerce-currency-switcher'); ?></a>,
-    &nbsp;<a href="https://openexchangerates.org/signup"  target="_blank"><?php esc_html_e('Open exchange rates', 'woocommerce-currency-switcher'); ?></a>,
+    <b class="woocs_hint" ><?php esc_html_e('Note', 'woocommerce-currency-switcher'); ?>:</b>&nbsp;<?php esc_html_e('Get free API key for:', 'woocommerce-currency-switcher'); ?>
+    &nbsp;<a href="https://free.currencyconverterapi.com/free-api-key"  target="_blank"><?php esc_html_e('The Free Currency Converter', 'woocommerce-currency-switcher'); ?></a>
+    <?php esc_html_e('OR', 'woocommerce-currency-switcher'); ?>
+    &nbsp;<a href="https://fixer.io/signup/free" target="_blank"><?php esc_html_e('Fixer', 'woocommerce-currency-switcher'); ?></a><br />
+
+    <b class="woocs_hint" ><?php esc_html_e('Note', 'woocommerce-currency-switcher'); ?>:</b>&nbsp;<?php esc_html_e('Get API key for:', 'woocommerce-currency-switcher'); ?>
+    &nbsp;<a href="https://openexchangerates.org/signup"  target="_blank"><?php esc_html_e('Open exchange rates', 'woocommerce-currency-switcher'); ?></a>
+    &nbsp;<?php esc_html_e('OR', 'woocommerce-currency-switcher'); ?>
     &nbsp;<a href="https://currencylayer.com/product"  target="_blank"><?php esc_html_e('Currencylayer', 'woocommerce-currency-switcher'); ?></a>
     <br />
 

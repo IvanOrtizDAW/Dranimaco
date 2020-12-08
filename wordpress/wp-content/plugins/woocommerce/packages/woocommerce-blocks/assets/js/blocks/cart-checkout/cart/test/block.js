@@ -37,7 +37,7 @@ describe( 'Testing cart', () => {
 		);
 		await waitFor( () => expect( fetchMock ).toHaveBeenCalled() );
 		expect(
-			screen.getByText( /Proceed to Checkout/i )
+			await screen.getByText( /Proceed to Checkout/i )
 		).toBeInTheDocument();
 
 		/**
@@ -65,7 +65,7 @@ describe( 'Testing cart', () => {
 		);
 
 		await waitFor( () => expect( fetchMock ).toHaveBeenCalled() );
-		expect( screen.getByText( /Empty Cart/i ) ).toBeInTheDocument();
+		expect( await screen.getByText( /Empty Cart/i ) ).toBeInTheDocument();
 		expect( fetchMock ).toHaveBeenCalledTimes( 1 );
 	} );
 } );

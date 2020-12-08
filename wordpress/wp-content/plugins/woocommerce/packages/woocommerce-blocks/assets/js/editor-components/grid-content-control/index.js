@@ -8,10 +8,6 @@ import { ToggleControl } from '@wordpress/components';
 
 /**
  * A combination of toggle controls for content visibility in product grids.
- *
- * @param {Object} props Incoming props for the component.
- * @param {function(any):any} props.onChange
- * @param {Object} props.settings
  */
 const GridContentControl = ( { onChange, settings } ) => {
 	const { button, price, rating, title } = settings;

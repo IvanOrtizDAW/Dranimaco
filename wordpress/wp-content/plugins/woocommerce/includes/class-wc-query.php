@@ -88,14 +88,10 @@ class WC_Query {
 	/**
 	 * Get page title for an endpoint.
 	 *
-	 * @param string $endpoint Endpoint key.
-	 * @param string $action Optional action or variation within the endpoint.
-	 *
-	 * @since 2.3.0
-	 * @since 4.6.0 Added $action parameter.
-	 * @return string The page title.
+	 * @param  string $endpoint Endpoint key.
+	 * @return string
 	 */
-	public function get_endpoint_title( $endpoint, $action = '' ) {
+	public function get_endpoint_title( $endpoint ) {
 		global $wp;
 
 		switch ( $endpoint ) {
@@ -134,30 +130,14 @@ class WC_Query {
 				$title = __( 'Add payment method', 'woocommerce' );
 				break;
 			case 'lost-password':
-				if ( in_array( $action, array( 'rp', 'resetpass', 'newaccount' ) ) ) {
-					$title = __( 'Set password', 'woocommerce' );
-				} else {
-					$title = __( 'Lost password', 'woocommerce' );
-				}
+				$title = __( 'Lost password', 'woocommerce' );
 				break;
 			default:
 				$title = '';
 				break;
 		}
 
-		/**
-		 * Filters the page title used for my-account endpoints.
-		 *
-		 * @since 2.6.0
-		 * @since 4.6.0 Added $action parameter.
-		 *
-		 * @see get_endpoint_title()
-		 *
-		 * @param string $title Default title.
-		 * @param string $endpoint Endpoint key.
-		 * @param string $action Optional action or variation within the endpoint.
-		 */
-		return apply_filters( 'woocommerce_endpoint_' . $endpoint . '_title', $title, $endpoint, $action );
+		return apply_filters( 'woocommerce_endpoint_' . $endpoint . '_title', $title, $endpoint );
 	}
 
 	/**

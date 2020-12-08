@@ -46,7 +46,11 @@ const blockSettings = {
 	edit( props ) {
 		return <Editor { ...props } />;
 	},
-	// Save the props to post content.
+	/**
+	 * Save the props to post content.
+	 *
+	 * @param {Object} attributes Attributes to save.
+	 */
 	save( { attributes } ) {
 		const dataAttributes = {};
 		Object.keys( attributes )

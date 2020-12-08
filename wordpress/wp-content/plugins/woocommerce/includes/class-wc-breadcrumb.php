@@ -349,9 +349,8 @@ class WC_Breadcrumb {
 	 * Endpoints.
 	 */
 	protected function endpoint_trail() {
-		$action         = isset( $_GET['action'] ) ? sanitize_text_field( wp_unslash( $_GET['action'] ) ) : '';
 		$endpoint       = is_wc_endpoint_url() ? WC()->query->get_current_endpoint() : '';
-		$endpoint_title = $endpoint ? WC()->query->get_endpoint_title( $endpoint, $action ) : '';
+		$endpoint_title = $endpoint ? WC()->query->get_endpoint_title( $endpoint ) : '';
 
 		if ( $endpoint_title ) {
 			$this->add_crumb( $endpoint_title );

@@ -330,12 +330,14 @@ if ( ! class_exists( 'YITH_WCWL_Wishlist_Item_Data_Store' ) ) {
 
 			$sql .= " GROUP BY i.prod_id, l.ID";
 
+			$sql .= " ORDER BY ";
+
 			if( ! empty( $orderby ) ){
 				$order = ! empty( $order ) ? $order : 'DESC';
-				$sql .= " ORDER BY i." .  esc_sql( $orderby ) . " " . esc_sql( $order ) . ", i.position ASC";
-			} else {
-				$sql .= " ORDER BY i.position ASC, i.ID DESC";
+				$sql .= "i." .  esc_sql( $orderby ) . " " . esc_sql( $order ) . ", ";
 			}
+
+			$sql .= "  i.position ASC";
 
 			if( ! empty( $limit ) && isset( $offset ) ){
 				$sql .= " LIMIT %d, %d";

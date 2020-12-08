@@ -69,8 +69,7 @@ const Tabs = ( {
 					tabId={ `${ instanceId }-${ name }` }
 					className="wc-block-components-tabs__content"
 				>
-					{ tabState.selectedId === `${ instanceId }-${ name }` &&
-						content }
+					{ content }
 				</TabPanel>
 			) ) }
 		</div>

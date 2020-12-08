@@ -37,8 +37,11 @@ Tidio Live Chat allows you to **chat with and convert your customers easily, als
 * A modern widget design that suits any website
 * An offline form for your visitors, so that you get email notifications about messages when you're not online
 * Contact your visitors via email when they leave your website and send email marketing campaigns with built-in Tidio Email Marketing tool
-* Integration with Zapier, Zendesk, Google Analytics, MailChimp, and many more
+* Integration with Zapier, Zendesk, GetResponse, SalesForce, Google Analytics, MailChimp, and many more
 * Use live chat, chatbots, email marketing and Messenger in a single panel
+* Contact your visitors via email when they leave the chat
+* Integration with Zendesk, GetResponse, SalesForce, MailChimp, and many more
+* All channels in one place - use chat, email, and Messenger in a single panel
 * Great technical support 24/7
 * A free plan available
 

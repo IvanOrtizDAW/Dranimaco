@@ -16,44 +16,28 @@ import {
 	usePaymentMethodDataContext,
 } from '@woocommerce/base-context';
 
-/**
- * Internal dependencies
- */
-import PaymentMethodErrorBoundary from './payment-method-error-boundary';
-
 const ExpressPaymentMethods = () => {
 	const { isEditor } = useEditorContext();
 	const {
 		setActivePaymentMethod,
 		activePaymentMethod,
-		paymentMethodData,
 		setPaymentStatus,
 	} = usePaymentMethodDataContext();
 	const paymentMethodInterface = usePaymentMethodInterface();
 	const { paymentMethods } = useExpressPaymentMethods();
 	const previousActivePaymentMethod = useRef( activePaymentMethod );
-	const previousPaymentMethodData = useRef( paymentMethodData );
 
 	const onExpressPaymentClick = useCallback(
 		( paymentMethodId ) => () => {
 			previousActivePaymentMethod.current = activePaymentMethod;
-			previousPaymentMethodData.current = paymentMethodData;
 			setPaymentStatus().started();
 			setActivePaymentMethod( paymentMethodId );
 		},
-		[
-			activePaymentMethod,
-			paymentMethodData,
-			setActivePaymentMethod,
-			setPaymentStatus,
-		]
+		[ setActivePaymentMethod, setPaymentStatus, activePaymentMethod ]
 	);
 	const onExpressPaymentClose = useCallback( () => {
 		setActivePaymentMethod( previousActivePaymentMethod.current );
-		if ( previousPaymentMethodData.current.isSavedToken ) {
-			setPaymentStatus().success( previousPaymentMethodData.current );
-		}
-	}, [ setActivePaymentMethod, setPaymentStatus ] );
+	}, [ setActivePaymentMethod ] );
 	const paymentMethodIds = Object.keys( paymentMethods );
 	const content =
 		paymentMethodIds.length > 0 ? (
@@ -75,11 +59,9 @@ const ExpressPaymentMethods = () => {
 			<li key="noneRegistered">No registered Payment Methods</li>
 		);
 	return (
-		<PaymentMethodErrorBoundary isEditor={ isEditor }>
-			<ul className="wc-block-components-express-payment__event-buttons">
-				{ content }
-			</ul>
-		</PaymentMethodErrorBoundary>
+		<ul className="wc-block-components-express-payment__event-buttons">
+			{ content }
+		</ul>
 	);
 };
 

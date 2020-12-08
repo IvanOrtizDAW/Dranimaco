@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitbf27e3460edb6c0a8310ea568e5346d0
+class ComposerStaticInit2f206e2514fd055d2fb3656775183bbe
 {
     public static $prefixLengthsPsr4 = array (
         'S' => 
@@ -20,17 +20,12 @@ class ComposerStaticInitbf27e3460edb6c0a8310ea568e5346d0
         array (
             'MaxMind\\Db\\' => 11,
         ),
-        'L' => 
-        array (
-            'League\\Container\\' => 17,
-        ),
         'C' => 
         array (
             'Composer\\Installers\\' => 20,
         ),
         'A' => 
         array (
-            'Automattic\\WooCommerce\\Vendor\\League\\Container\\' => 47,
             'Automattic\\WooCommerce\\Tests\\' => 29,
             'Automattic\\WooCommerce\\Testing\\Tools\\' => 37,
             'Automattic\\WooCommerce\\Blocks\\' => 30,
@@ -57,17 +52,9 @@ class ComposerStaticInitbf27e3460edb6c0a8310ea568e5346d0
         array (
             0 => __DIR__ . '/..' . '/maxmind-db/reader/src/MaxMind/Db',
         ),
-        'League\\Container\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/league/container/src',
-        ),
         'Composer\\Installers\\' => 
         array (
             0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
-        ),
-        'Automattic\\WooCommerce\\Vendor\\League\\Container\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/league/container',
         ),
         'Automattic\\WooCommerce\\Tests\\' => 
         array (
@@ -209,9 +196,9 @@ class ComposerStaticInitbf27e3460edb6c0a8310ea568e5346d0
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitbf27e3460edb6c0a8310ea568e5346d0::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitbf27e3460edb6c0a8310ea568e5346d0::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitbf27e3460edb6c0a8310ea568e5346d0::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit2f206e2514fd055d2fb3656775183bbe::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit2f206e2514fd055d2fb3656775183bbe::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit2f206e2514fd055d2fb3656775183bbe::$classMap;
 
         }, null, ClassLoader::class);
     }

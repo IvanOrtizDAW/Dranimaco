@@ -1,0 +1,50 @@
+11-08-2020 @ 19:25:05 - [Order Id : 200] Start payment process with payment method : MSC
+
+11-08-2020 @ 19:25:05 - [Order Id : 200] Get checkout parameters
+
+11-08-2020 @ 19:25:05 - [Order Id : 200] Checkout parameters  : Array [ 
+[order_id] => 200
+[payment_method_id] => skrill_msc
+[amount] => 14.99
+[refunded_amount] => 0
+[currency] => EUR
+[customer_id] => 1
+[transaction_id] => 20110820020110807253996057247
+[payment_type] => MSC
+[additional_information] => a:0:{}
+[payment_response] => a:27:{s:12:"pay_to_email";s:0:"";s:21:"recipient_description";s:0:"";s:14:"transaction_id";s:29:"20110820020110807253996057247";s:10:"return_url";s:81:"http://dranimaco.com/wordpress/checkout/order-pay/200/?key=wc_order_EI75sCNnLV7Gc";s:10:"status_url";s:158:"http://dranimaco.com/wordpress/checkout/order-pay/200/?key=wc_order_EI75sCNnLV7Gc&status_url=true&order_id=200&secure_payment=ea00bd3b4ff824175ac2a52c44f41cfb";s:10:"cancel_url";s:40:"http://dranimaco.com/wordpress/checkout/";s:8:"language";s:2:"ES";s:8:"logo_url";s:0:"";s:12:"prepare_only";i:1;s:14:"pay_from_email";s:23:"ivan.231194@hotmail.com";s:9:"firstname";s:7:"gorrino";s:8:"lastname";s:5:"rules";s:7:"address";s:2:", ";s:11:"postal_code";s:0:"";s:4:"city";s:0:"";s:7:"country";s:3:"ESP";s:8:"currency";s:3:"EUR";s:19:"detail1_description";s:5:"Order";s:12:"detail1_text";s:3:"200";s:19:"detail2_description";s:12:"Order Amount";s:12:"detail2_text";s:9:"14.99 EUR";s:19:"detail3_description";s:8:"Shipping";s:12:"detail3_text";s:8:"0.00 EUR";s:15:"merchant_fields";s:8:"platform";s:8:"platform";s:8:"87941747";s:15:"payment_methods";s:3:"MSC";s:6:"amount";s:5:"14.99";}
+]
+
+11-08-2020 @ 19:25:05 - [Order Id : 200] Get payment widget url
+
+11-08-2020 @ 19:25:05 - [Order Id : 200] Payment widget url : https://pay.skrill.com?sid={"code":"BAD_REQUEST","message":"Missing parameter: email"}
+
+11-08-2020 @ 19:25:05 - [Order Id : 200] Payment widget url is invalid
+
+11-08-2020 @ 19:25:05 - [Order Id : 200] Payment has not been successfully completed
+
+11-08-2020 @ 19:26:50 - [Order Id : 201] Start payment process with payment method : WLT
+
+11-08-2020 @ 19:26:50 - [Order Id : 201] Get checkout parameters
+
+11-08-2020 @ 19:26:50 - [Order Id : 201] Checkout parameters  : Array [ 
+[order_id] => 201
+[payment_method_id] => skrill_wlt
+[amount] => 14.99
+[refunded_amount] => 0
+[currency] => EUR
+[customer_id] => 1
+[transaction_id] => 20110820120110807267218778408
+[payment_type] => WLT
+[additional_information] => a:0:{}
+[payment_response] => a:27:{s:12:"pay_to_email";s:0:"";s:21:"recipient_description";s:0:"";s:14:"transaction_id";s:29:"20110820120110807267218778408";s:10:"return_url";s:81:"http://dranimaco.com/wordpress/checkout/order-pay/201/?key=wc_order_xR9yakZqwB9pX";s:10:"status_url";s:158:"http://dranimaco.com/wordpress/checkout/order-pay/201/?key=wc_order_xR9yakZqwB9pX&status_url=true&order_id=201&secure_payment=623a29bfbd7ec909416198d5f0537c5b";s:10:"cancel_url";s:40:"http://dranimaco.com/wordpress/checkout/";s:8:"language";s:2:"ES";s:8:"logo_url";s:0:"";s:12:"prepare_only";i:1;s:14:"pay_from_email";s:23:"ivan.231194@hotmail.com";s:9:"firstname";s:7:"gorrino";s:8:"lastname";s:5:"rules";s:7:"address";s:2:", ";s:11:"postal_code";s:0:"";s:4:"city";s:0:"";s:7:"country";s:3:"ESP";s:8:"currency";s:3:"EUR";s:19:"detail1_description";s:5:"Order";s:12:"detail1_text";s:3:"201";s:19:"detail2_description";s:12:"Order Amount";s:12:"detail2_text";s:9:"14.99 EUR";s:19:"detail3_description";s:8:"Shipping";s:12:"detail3_text";s:8:"0.00 EUR";s:15:"merchant_fields";s:8:"platform";s:8:"platform";s:8:"87941747";s:15:"payment_methods";s:3:"WLT";s:6:"amount";s:5:"14.99";}
+]
+
+11-08-2020 @ 19:26:50 - [Order Id : 201] Get payment widget url
+
+11-08-2020 @ 19:26:50 - [Order Id : 201] Payment widget url : https://pay.skrill.com?sid={"code":"BAD_REQUEST","message":"Missing parameter: email"}
+
+11-08-2020 @ 19:26:50 - [Order Id : 201] Payment widget url is invalid
+
+11-08-2020 @ 19:26:50 - [Order Id : 201] Payment has not been successfully completed
+

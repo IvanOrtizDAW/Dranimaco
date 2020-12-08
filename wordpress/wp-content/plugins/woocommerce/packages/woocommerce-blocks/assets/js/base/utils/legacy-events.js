@@ -1,7 +1,5 @@
 const Event = window.Event || null;
 
-/** @typedef {import('window').HTMLNode} HTMLNode */
-
 /**
  * Wrapper function to dispatch an event so it's compatible with IE11.
  *
@@ -50,7 +48,7 @@ export const triggerFragmentRefresh = () => {
  * @param {boolean} bubbles         Whether the event bubbles.
  * @param {boolean} cancelable      Whether the event is cancelable.
  *
- * @return {Function} Function to remove the jQuery event handler. Ideally it
+ * @returns {Function} Function to remove the jQuery event handler. Ideally it
  * should be used when the component is unmounted.
  */
 export const translateJQueryEventToNative = (

@@ -17,16 +17,11 @@ import {
 	PRIVACY_URL,
 	TERMS_URL,
 	CHECKOUT_PAGE_ID,
-	isExperimentalBuild,
 } from '@woocommerce/block-settings';
 import { getAdminLink } from '@woocommerce/settings';
-import { createInterpolateElement } from 'wordpress-element';
+import { __experimentalCreateInterpolateElement } from 'wordpress-element';
 import { useRef } from '@wordpress/element';
-import {
-	EditorProvider,
-	useEditorContext,
-	StoreNoticesProvider,
-} from '@woocommerce/base-context';
+import { EditorProvider, useEditorContext } from '@woocommerce/base-context';
 import PageSelector from '@woocommerce/editor-components/page-selector';
 import {
 	previewCart,
@@ -46,7 +41,6 @@ const BlockSettings = ( { attributes, setAttributes } ) => {
 		showPhoneField,
 		requireCompanyField,
 		requirePhoneField,
-		allowCreateAccount,
 		showOrderNotes,
 		showPolicyLinks,
 		showReturnToCart,
@@ -63,7 +57,7 @@ const BlockSettings = ( { attributes, setAttributes } ) => {
 					isDismissible={ false }
 					status="warning"
 				>
-					{ createInterpolateElement(
+					{ __experimentalCreateInterpolateElement(
 						__(
 							'If you would like to use this block as your default checkout you must update your <a>page settings in WooCommerce</a>.',
 							'woocommerce'
@@ -156,27 +150,6 @@ const BlockSettings = ( { attributes, setAttributes } ) => {
 					/>
 				) }
 			</PanelBody>
-			{ isExperimentalBuild() && (
-				<PanelBody
-					title={ __(
-						'Account options',
-						'woocommerce'
-					) }
-				>
-					<ToggleControl
-						label={ __(
-							'Allow shopper to sign up for a user account during checkout',
-							'woocommerce'
-						) }
-						checked={ allowCreateAccount }
-						onChange={ () =>
-							setAttributes( {
-								allowCreateAccount: ! allowCreateAccount,
-							} )
-						}
-					/>
-				</PanelBody>
-			) }
 			<PanelBody
 				title={ __( 'Order notes', 'woocommerce' ) }
 			>
@@ -226,7 +199,7 @@ const BlockSettings = ( { attributes, setAttributes } ) => {
 						className="wc-block-base-control-notice"
 						isDismissible={ false }
 					>
-						{ createInterpolateElement(
+						{ __experimentalCreateInterpolateElement(
 							__(
 								'Pages must be first setup in store settings: <a1>Privacy policy</a1>, <a2>Terms and conditions</a2>.',
 								'woocommerce'
@@ -347,11 +320,9 @@ const CheckoutEditor = ( { attributes, setAttributes } ) => {
 						'woocommerce'
 					) }
 				>
-					<StoreNoticesProvider context="wc/checkout">
-						<Disabled>
-							<Block attributes={ attributes } />
-						</Disabled>
-					</StoreNoticesProvider>
+					<Disabled>
+						<Block attributes={ attributes } />
+					</Disabled>
 				</BlockErrorBoundary>
 			</div>
 		</EditorProvider>

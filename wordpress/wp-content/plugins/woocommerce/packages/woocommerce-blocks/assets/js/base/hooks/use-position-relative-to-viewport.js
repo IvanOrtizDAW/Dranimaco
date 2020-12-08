@@ -4,8 +4,6 @@
 import { useRef, useLayoutEffect, useState } from '@wordpress/element';
 import { getIntersectionObserver } from '@woocommerce/base-utils';
 
-/** @typedef {import('react')} React */
-
 /** @type {React.CSSProperties} */
 const style = {
 	bottom: 0,

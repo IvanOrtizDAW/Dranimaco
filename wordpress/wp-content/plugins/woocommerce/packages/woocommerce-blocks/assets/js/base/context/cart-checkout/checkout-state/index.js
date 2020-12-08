@@ -101,7 +101,6 @@ export const CheckoutStateProvider = ( {
 		isSuccessResponse,
 		isErrorResponse,
 		isFailResponse,
-		shouldRetry,
 	} = useEmitResponse();
 
 	// set observers on ref so it's always current.
@@ -238,7 +237,10 @@ export const CheckoutStateProvider = ( {
 							addErrorNotice( response.message, errorOptions );
 						}
 						// irrecoverable error so set complete
-						if ( ! shouldRetry( response ) ) {
+						if (
+							typeof response.retry !== 'undefined' &&
+							response.retry !== true
+						) {
 							dispatch( actions.setComplete( response ) );
 						} else {
 							dispatch( actions.setIdle() );
@@ -276,7 +278,7 @@ export const CheckoutStateProvider = ( {
 								: undefined;
 							addErrorNotice( response.message, errorOptions );
 						}
-						if ( ! shouldRetry( response ) ) {
+						if ( ! response.retry ) {
 							dispatch( actions.setComplete( response ) );
 						} else {
 							// this will set an error which will end up
@@ -333,9 +335,6 @@ export const CheckoutStateProvider = ( {
 		hasOrder: !! checkoutState.orderId,
 		customerId: checkoutState.customerId,
 		orderNotes: checkoutState.orderNotes,
-		shouldCreateAccount: checkoutState.shouldCreateAccount,
-		setShouldCreateAccount: ( value ) =>
-			dispatch( actions.setShouldCreateAccount( value ) ),
 	};
 	return (
 		<CheckoutContext.Provider value={ checkoutData }>

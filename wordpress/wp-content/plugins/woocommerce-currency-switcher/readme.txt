@@ -7,12 +7,11 @@ Tested up to: 5.5
 Requires PHP: 5.4
 Stable tag: trunk
 
-
-WooCommerce Currency Switcher is Woo Multi Currency plugin that allows to switch products prices and get their rates converted in the real time! WooCommerce Multi Currency and WooCommerce Multi Pay functionality in the one plugin.
+WooCommerce Currency Switcher is WooCommerce multi currency switcher plugin that allows to switch products prices and get their rates converted in the real time! The best woo currency switcher plugin for WooCommerce e-shop! WooCommerce Multi Currency and WooCommerce Multi Pay functionality.
 
 == Description ==
 
-**WooCommerce Currency Switcher** (WOOCS) is  WooCommerce multi currency plugin, that allows your site visitors switch products prices currencies according to set currencies rates in the real time and pay in the selected currency (optionally). Woo multi currency plugin allows to add any currency to WooCommerce store. Ideal solution to make the serious WooCommerce store site in multiple currencies!
+**WooCommerce Currency Switcher** (WOOCS) is  WooCommerce multi currency switcher, that allows your site visitors switch products prices currencies according to set currencies rates in the real time and pay in the selected currency (optionally). Allows to add any currency for WooCommerce store. Ideal solution to make the serious WooCommerce store site in multiple currencies!
 
 WOOCS is woo currency tool and available as shortcode **[[woocs]](https://currency-switcher.com/shortcode/woocs/)** so as the widget.
 
@@ -23,8 +22,6 @@ Demo: [demo.currency-switcher.com](https://demo.currency-switcher.com/)
 FAQ: [currency-switcher.com/category/faq](https://currency-switcher.com/category/faq/)
 
 API: [currency-switcher.com/codex](https://currency-switcher.com/codex/)
-
-**Full version with 50% discount**: [Envato Cyber Monday 2020](https://codecanyon.pluginus.net/item/woocommerce-currency-switcher/8085217) until 02 Dec 2020
 
 Latest PHP 7.4.x – FULL COMPATIBILITY!
 
@@ -103,9 +100,7 @@ Note: for today design of the plugin is different of the video (is improved), se
 
 &#9989;&nbsp;**No GET data in the link**: switches currency without GET properties (?currency=USD) in the link (optionally)
 
-&#9989;&nbsp;**Selected currency storage**: For the site admin WOOCS provides set of mechanisms to storage user selected currency on different hosting architectures: Session, Transient, Memcached, Redis
-
-&#9989;&nbsp;**Wide API**: For site developer - advanced [API functionality set](https://currency-switcher.com/codex/) which allows to manipulate with prices and their rates on the fly using conditional logic
+&#9989;&nbsp;**Wide API**: advanced [API functionality set](https://currency-switcher.com/codex/) which allows to manipulate with prices and their rates on the fly using conditional logic
 
 &#9989;&nbsp;**Easy to use for administrators and shop customers**: install, set settings for couple of minutes and let your shop make more money!
 
@@ -132,9 +127,9 @@ Note: for today design of the plugin is different of the video (is improved), se
 
 &#9989;&nbsp;[WOOF - Products Filter for WooCommerce](https://wordpress.org/plugins/woocommerce-products-filter/): is an extendable, flexible and robust plugin for WooCommerce that allows your site customers filter products by products categories, attributes, tags, custom taxonomies and price. Supports latest version of the WooCommerce plugin. A must have plugin for your WooCommerce powered online store! Maximum flexibility!
 
-&#9989;&nbsp;[BEAR - Bulk Editor for WooCommerce](https://wordpress.org/plugins/woo-bulk-editor/): WordPress plugin for managing and bulk edit WooCommerce Products data in robust and flexible way! Be professionals with managing data of your woocommerce e-shop!
+&#9989;&nbsp;[WOOBE - Bulk Editor for WooCommerce](https://wordpress.org/plugins/woo-bulk-editor/): WordPress plugin for managing and bulk edit WooCommerce Products data in robust and flexible way! Be professionals with managing data of your woocommerce e-shop!
 
-&#9989;&nbsp;[PROTAS - WooCommerce Active Products Tables](https://wordpress.org/plugins/profit-products-tables-for-woocommerce/): is WooCommerce plugin for displaying shop products in table format. Tables makes focus for your buyers on the things they want to get, nothing superfluous, just what the client wants, and full attention to what is offered!
+&#9989;&nbsp;[WOOT - WooCommerce Active Products Tables](https://wordpress.org/plugins/profit-products-tables-for-woocommerce/): is WooCommerce plugin for displaying shop products in table format. Tables makes focus for your buyers on the things they want to get, nothing superfluous, just what the client wants, and full attention to what is offered!
 
 &#9989;&nbsp;[TABLEON - WordPress Post Tables Filterable](https://wordpress.org/plugins/posts-table-filterable): WordPress plugin for displaying site posts and their custom post types in table format. Tables makes focus for your customers on the things they want to get, nothing superfluous, just what the client wants, and full attention to what is offered!
 
@@ -186,10 +181,6 @@ R: [https://currency-switcher.com/category/faq/](https://currency-switcher.com/c
 13. Fixed minimum and maximum coupon verification amount for each currency
 
 == Changelog ==
-
-= 1.3.4 =
-* [Memcached and Redis added as currency storage](https://currency-switcher.com/how-to-use-memcached-or-redis-as-currency-storage/)
-* Little fixes
 
 = 1.3.3.2 =
 * critical fix with Welcome Currency and compatibility
