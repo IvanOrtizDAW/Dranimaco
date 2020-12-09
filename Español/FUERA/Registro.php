@@ -144,6 +144,10 @@
             
               include("base.php");
 
+              include("Password.php");
+
+              include("filtrado.php");
+
         /** 
             if($conexion){
               echo "<p class=correcto>Conexion correcta</p><br>";
@@ -152,11 +156,11 @@
             }
         */
 
-            $nombre=trim($_POST['nombre']);
-            $pass=trim($_POST['pass']);
+            $nombre=filtrado($_POST['nombre']);
+            $pass=filtrado($_POST['pass']);
             $hash = password_hash($pass,  PASSWORD_DEFAULT);
-            $email=trim($_POST['email']);
-            $telefono=trim($_POST['telefono']);
+            $email=filtrado($_POST['email']);
+            $telefono=filtrado($_POST['telefono']);
             $fecha= date("Y-m-d H:i:s");  
 
             $datos=false;
@@ -184,27 +188,17 @@
               echo "<p class=error>Usuario ya registrado,vuelve a intentarlo</p><br>";
             }
 
-            $sql2 = $conexion->query("SELECT usuario_nombre FROM registrados WHERE usuario_nombre='$nombre'");
-            $row=$sql2->fetch_array();
+           $query = "SELECT * FROM registrados";
+          $comprobar= mysqli_query($conexion, $query);
 
-            
-            $sql3 = $conexion->query("SELECT usuario_pass FROM registrados WHERE usuario_nombre='$pass'");
-            $row2=$sql3->fetch_array();
-
-            echo $row['usuario_nombre'].$row['usuario_pass'];
-
-        if($nombre!==$row['usuario_nombre']){  
-
-          if (password_verify($pass, $row2['usuario_pass'])) {
-
-            $verificar_pass=mysqli_query($conexion,"SELECT * FROM registrados WHERE usuario_pass='$row[usuario_pass]'");
-            if(mysqli_num_rows($verificar_pass)>0){
+          if (mysqli_num_rows($comprobar) > 0) {
+            while($fila = mysqli_fetch_assoc($comprobar)){
+              if(password_verify($pass,$fila["usuario_pass"])){
                $datos=true;
               echo "<p class=error>Contraseña ya existente,vuelve a intentarlo</p><br>";
-              
-            }
-         }
-        }
+              }
+          }   
+       }           
 
             $verificar_email=mysqli_query($conexion,"SELECT * FROM registrados WHERE usuario_email='$email'");
             if(mysqli_num_rows($verificar_email)>0){
@@ -291,7 +285,7 @@
               echo "<p class=error>Contraseña incorrecta(Tiene que tener como minimo 5 caracteres)</p><br>"; 
 						 }
 						} else {			
-						echo "<p class=error>Campo de la validacion de la contraseña vacias</p><br>";
+						echo "<p class=error>Campo de la validacion de la contraseña vacia</p><br>";
 				} 	
 		}
 

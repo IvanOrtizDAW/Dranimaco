@@ -103,7 +103,8 @@ session_start();
  if (isset($_POST['enviar'])&& $error==false){			
 
               include("base.php");
-            
+              include("Password.php");
+        
             $usuario=$_POST['nombre'];
             $pass=$_POST['pass'];
 
@@ -120,20 +121,20 @@ session_start();
            $telefono=$row['usuario_tel'];
            $id=$row['usuario_id'];
 
+            if($array['contar']>0){
               if (password_verify($pass, $row['usuario_pass'])) {
-                  if($array['contar']>0){
                 $_SESSION['id']=$id;   
                 $_SESSION['usuario']=$usuario;
                 $_SESSION['email']=$email;
                 $_SESSION['telefono']=$telefono;
                 header("location:../DENTRO/index.php");
-              }else{
-                echo "<p class=error>Nombre de usuario incorrecto,vuelve a intentarlo</p><br>";
-              }
               } else {
                  echo "<p class=error>Contraseña incorrecta,vuelve a intentarlo</p><br>";
               }
-       
+            }else{
+                echo "<p class=error>Nombre de usuario incorrecto,vuelve a intentarlo</p><br>";
+              }
+
  }
 
 ?>
