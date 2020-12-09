@@ -29,7 +29,14 @@
 
     <?php
 
-            require "base.php";
+            session_start();
+            
+              include("base.php");
+            
+              include("Password.php");
+
+              include("filtrado.php");
+
 
   $error=false;	
 
@@ -107,14 +114,32 @@
 
 if(isset($_POST['enviar']) && $error==false){
 
-    $pass=$conexion->real_escape_string($_POST['pass']);
- 
-    $act = $conexion->query("UPDATE registrados SET usuario_pass = '$pass', token = '' WHERE usuario_nombre ='$user'");
+  $pass=filtrado($_POST['pass']);
+  $hash = password_hash($pass,  PASSWORD_DEFAULT);
+  $datos=false;
+  $resultado=false;
 
-    if($act ){
-        echo "<div class=spinner-border text-info><p class=correcto>Password changed, wait 3 seconds ..</p></div><br>";
-        Header("Refresh: 3; URL=InicioSesion.php");
-    }
+  $query = "SELECT * FROM registrados";
+          $comprobar = mysqli_query($conexion, $query);
+
+          if (mysqli_num_rows($comprobar) > 0) {
+            while($fila = mysqli_fetch_assoc($comprobar)){
+              if(password_verify($pass,$fila["usuario_pass"])){
+               $datos=true;
+              echo "<p class=error>Password already existing, please try again</p><br>";
+              }
+          }   
+       } 
+
+    if($datos==false){
+             $act = $conexion->query("UPDATE registrados SET usuario_pass = '$hash', token = '' WHERE usuario_nombre ='$user'");
+              if($act){
+                 echo "<div><p class=correcto>Password changed, wait 3 seconds ...</p></div><br>";
+                 Header("Refresh: 3; URL=InicioSesion.php");
+            }else{
+              echo "<p class=error>Error changing password, try again</p><br>";
+            }
+       }
 
 }
 

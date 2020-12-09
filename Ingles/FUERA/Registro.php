@@ -140,6 +140,10 @@
  if (isset($_POST['enviar'])&& $error==false){			
             
               include("base.php");
+
+              include("Password.php");
+
+              include("filtrado.php");
             
         /** 
             if($conexion){
@@ -149,10 +153,11 @@
             }
         */
 
-            $nombre=trim($_POST['nombre']);
-            $pass=trim($_POST['pass']);
-            $email=trim($_POST['email']);
-            $telefono=trim($_POST['telefono']);
+            $nombre=filtrado($_POST['nombre']);
+            $pass=filtrado($_POST['pass']);
+            $hash = password_hash($pass,  PASSWORD_DEFAULT);
+            $email=filtrado($_POST['email']);
+            $telefono=filtrado($_POST['telefono']);
             $fecha= date("Y-m-d H:i:s");  
     
             $datos=false;
@@ -180,6 +185,18 @@
               echo "<p class=error>User already registered, try again</p><br>";
             }
 
+             $query = "SELECT * FROM registrados";
+          $comprobar = mysqli_query($conexion, $query);
+
+          if (mysqli_num_rows($comprobar) > 0) {
+            while($fila = mysqli_fetch_assoc($comprobar)){
+              if(password_verify($pass,$fila["usuario_pass"])){
+               $datos=true;
+              echo "<p class=error>Password already existing, please try again</p><br>";
+              }
+          }   
+       }  
+
             $verificar_pass=mysqli_query($conexion,"SELECT * FROM registrados WHERE usuario_pass='$pass'");
             if(mysqli_num_rows($verificar_pass)>0){
                $datos=true;
@@ -200,7 +217,7 @@
 
             if($datos==false){
             $consulta="INSERT INTO registrados (usuario_nombre, usuario_pass, usuario_email, usuario_tel, usuario_fecha,token) 
-            VALUES ('$nombre','$pass','$email','$telefono','$fecha','0')";
+            VALUES ('$nombre','$hash','$email','$telefono','$fecha',' ')";
             $resultado=mysqli_query($conexion,$consulta);
             }
 
