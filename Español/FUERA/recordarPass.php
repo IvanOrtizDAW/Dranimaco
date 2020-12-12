@@ -90,7 +90,7 @@
         $email_from="dranimaco2020@gmail.com";
 
         $email_message="Hola ".$row['usuario_nombre']. " has solicitado cambiar tu contraseña, ingresa al siguiente link\n\n";
-        $email_message .="http://dranimaco.com/Espa%C3%B1ol/FUERA/nuevaPass.php?user=".$row['usuario_nombre']."&token=".$token."\n\n";
+        $email_message .="http://localhost/dranimaco/Espa%C3%B1ol/FUERA/nuevaPass.php?user=".$row['usuario_nombre']."&token=".$token."\n\n";
 
          $headers = 'From: ' .$email_from . "\r\n". 
         'Reply-To: ' . $email_from. "\r\n" . 

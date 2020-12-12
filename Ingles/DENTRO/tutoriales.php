@@ -55,8 +55,8 @@
           <a href="contacto.php"><i class="fas fa-phone"></i> Contact/Suggestion</a>
         </li>
         <li class="menu">
-          <a class="active" href="#"><i class="fas fa-play-circle"></i> Tutorials<i
-              class="fas fa-arrow-circle-down"></i></a>
+          <a class="active" href="#"><i class="fas fa-play-circle"></i> Tutorials </a><i
+              class="fas fa-arrow-circle-down"></i>
           <ul>
             <li class="menu2">
               <a href="basico.php"><i class="fas fa-play-circle"></i> Basic</a>
@@ -190,17 +190,17 @@
 
   }else{
     echo "<div class=denegado>";
-    echo "<h1>Acceso denegado</h1>";
+    echo "<h1>Access denied</h1>";
     echo "<br>";
-    echo "<p>Vuelva a iniciar sesión
+    echo "<p>Log in again
     <br>
-    <a href=http://dranimaco.com/Ingles/FUERA/inicioSesion.php>Inicio de sesión</a>
+    <a href=http://localhost/dranimaco/Ingles/FUERA/inicioSesion.php>Login</a>
     </p> ";
-    echo "<p>Registrese si no tiene cuenta
+    echo "<p>Register if you don't have an account
     <br>
-    <a href=http://dranimaco.com/Ingles/FUERA/Registro.php>Registro</a>
+    <a href=http://localhost/dranimaco/Ingles/FUERA/Registro.php>Registry</a>
     <p> ";
-    echo "<img class=denegado-img image-responsive src=../../../../Imagenes/logoDenegado.PNG>";
+    echo "<img class=denegado-img image-responsive src=../../Imagenes/logoDenegado.PNG>";
     echo "</div>";
   }
 

@@ -3,8 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../../Diseño/CSS/estilosDentroComunes.css" type="text/css" />
   <link rel="stylesheet" href="../../DISEÑO/CSS/estilosHistoria.css" type="text/css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -40,7 +39,7 @@
 
       <ul>
 
-        <img src="../../Imagenes/logo.PNG" alt="Dranimaco logo" />
+        <li><img src="../../Imagenes/logo.PNG" alt="Dranimaco logo" /></li>
         <li class="logo">DRANIMACO</li>
 
         <?php
@@ -61,14 +60,14 @@
           <a href="contacto.php"><i class="fas fa-phone"></i> Contact/Suggestion</a>
         </li>
         <li class="menu">
-          <a href="tutoriales.php"><i class="fas fa-play-circle"></i> Tutorials<i
-              class="fas fa-arrow-circle-down"></i></a>
+          <a href="tutoriales.php"><i class="fas fa-play-circle"></i> Tutorials </a><i
+            class="fas fa-arrow-circle-down"></i>
           <ul>
             <li class="menu2">
               <a href="basico.php"><i class="fas fa-play-circle"></i> Basic</a>
             </li>
             <li class="menu2">
-              <a href="medio.php"><i class="fas fa-play-circle"></i> Medium</a>
+              <a href="medio.php"><i class="fas fa-play-circle"></i> Middle</a>
             </li>
             <li class="menu2">
               <a href="experto.php"><i class="fas fa-play-circle"></i> Expert</a>
@@ -82,7 +81,7 @@
           <a href="cerrarSesion.php"><i class="far fa-times-circle"></i> Sign off</a>
         </li>
         <li class="menu"><a href="../../Español/DENTRO/historia.php"><img class="imagen-idioma"
-              src="../../Imagenes/Español.png" alt="" width="5px" height="10px"></a></li>
+              src="../../Imagenes/Español.png" alt=""></a></li>
         <li class="hamburgesa"><a href="#"><i class="fas fa-bars"></i></a></li>
 
       </ul>
@@ -102,7 +101,7 @@
     </div>
 
     <div class="noticia">
-      <img class="izquierda" src="../../Imagenes/Historia/personaje.jpg">
+      <img class="izquierda" alt="" src="../../Imagenes/Historia/personaje.jpg">
       <p>
         If someone says "3D modeling", we all quickly think of Pixar or Toy Story, as well as the rest of the movies
         that have redefined the concept of animated cinema in recent decades.
@@ -156,7 +155,7 @@
 
 
     <div class="noticia">
-      <img class="derecha" src="../../Imagenes/Historia/personajes.webp">
+      <img class="derecha" alt="" src="../../Imagenes/Historia/personajes.webp">
       <p>
         All of this has opened up a new dimension for 3D modeling. That technique that in the 90s seemed the work of
         engineers, today is a multidisciplinary tool that is available to everyone, with hundreds of specialized
@@ -211,7 +210,7 @@
     </div>
 
     <div class="noticia">
-      <img class="izquierda" src="../../Imagenes/Historia/mickey.gif">
+      <img class="izquierda" alt="" src="../../Imagenes/Historia/mickey.gif">
       <p>
         Nowadays animation has achieved a highly relevant niche in the
         movie world. Not only in the making of feature films, but also with
@@ -243,7 +242,7 @@
     </div>
 
     <div class="noticia">
-      <img class="derecha" src="../../Imagenes/Historia/perro.gif">
+      <img class="derecha" alt="" src="../../Imagenes/Historia/perro.gif">
       <p>
         Much of today's animation is done digitally, but in its
         in the beginning everything was different. It all started with creations of small elements like the
@@ -276,7 +275,7 @@
     </div>
 
     <div class="noticia">
-      <img class="izquierda" src="../../Imagenes/Historia/personaje2.webp">
+      <img class="izquierda" alt="" src="../../Imagenes/Historia/personaje2.webp">
       <p>
         In 1921, Walt Disney began to work in the world of animation
         creating small films for a cinema chain. These films are made with
@@ -325,7 +324,7 @@
           <li><a href="#">History</a></li>
           <li><a href="Galeria.php">Gallery</a></li>
           <li><a href="datos.php">Data</a></li>
-          <li><a href="contacto.php">Contact</a></li>
+          <li><a href="contacto.php">Contact/Suggestion</a></li>
           <li><a href="tutoriales.php">Tutorials</a></li>
           <li><a href="../../wordpress/tienda">Store</a></li>
           <li><a href="cerrarSesion.php">Sign off</a></li>
@@ -343,14 +342,14 @@
         <h2 class="ft-title">Tutorials</h2>
         <ul>
           <li><a href="basico.php">Basic</a></li>
-          <li><a href="medio.php">Medium</a></li>
+          <li><a href="medio.php">Middle</a></li>
           <li><a href="experto.php">Expert</a></li>
         </ul>
       </div>
     </section>
 
     <!-- Footer social -->
-    <section class="ft-social">
+    <div class="ft-social">
       <ul class="ft-social-list">
         <li>
           <a href="#"><i class="fab fa-facebook"></i></a>
@@ -362,25 +361,19 @@
           <a href="#"><i class="fab fa-instagram"></i></a>
         </li>
         <li>
-          <a href="#"><i class="fab fa-github"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-        </li>
-        <li>
           <a href="#"><i class="fab fa-youtube"></i></a>
         </li>
       </ul>
-    </section>
+    </div>
 
     <!-- Footer legal -->
-    <section class="ft-legal">
+    <div class="ft-legal">
       <ul class="ft-legal-list">
         <li><a href="terminosCondiciones.html" target="_blank">Terms &amp; Conditions</a></li>
         <li><a href="politicaPrivacidad.html" target="_blank">Privacy Policy</a></li>
         <li>&copy; 2020 Copyright</li>
       </ul>
-    </section>
+    </div>
   </footer>
   <script src="../../Scripts/menuHamburgesa.js"></script>
 
@@ -388,17 +381,17 @@
 
    }else{
     echo "<div class=denegado>";
-    echo "<h1>Acceso denegado</h1>";
+    echo "<h1>Access denied</h1>";
     echo "<br>";
-    echo "<p>Vuelva a iniciar sesión
+    echo "<p>Log in again
     <br>
-    <a href=http://dranimaco.com/Ingles/FUERA/inicioSesion.php>Inicio de sesión</a>
+    <a href=http://localhost/dranimaco/Ingles/FUERA/inicioSesion.php>Login</a>
     </p> ";
-    echo "<p>Registrese si no tiene cuenta
+    echo "<p>Register if you don't have an account
     <br>
-    <a href=http://dranimaco.com/Ingles/FUERA/Registro.php>Registro</a>
+    <a href=http://localhost/dranimaco/Ingles/FUERA/Registro.php>Registry</a>
     <p> ";
-    echo "<img class=denegado-img image-responsive src=../../../../Imagenes/logoDenegado.PNG>";
+    echo "<img class=denegado-img image-responsive src=../../Imagenes/logoDenegado.PNG>";
     echo "</div>";
   }
 

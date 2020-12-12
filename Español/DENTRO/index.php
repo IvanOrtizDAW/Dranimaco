@@ -352,7 +352,7 @@
 
     </div>
 
-  
+    <span class="ir-arriba"><a href="#"><i class="fas fa-arrow-circle-up"></i></a></span>
 
   </section>
 
@@ -366,7 +366,7 @@
           <li><a href="historia.php">Historia</a></li>
           <li><a href="Galeria.php">Galeria</a></li>
           <li><a href="datos.php">Datos</a></li>
-          <li><a href="contacto.php">Contacto</a></li>
+          <li><a href="contacto.php">Contacto/Sugerencia</a></li>
           <li><a href="tutoriales.php">Tutoriales</a></li>
           <li><a href="../../wordpress/tienda">Tienda</a></li>
           <li><a href="cerrarSesion.php">Cerrar Sesion</a></li>
@@ -427,13 +427,13 @@
     echo "<br>";
     echo "<p>Vuelva a iniciar sesión
     <br>
-    <a href=http://dranimaco.com/Espa%C3%B1ol/FUERA/inicioSesion.php>Inicio de sesión</a>
+    <a href=http://localhost/dranimaco/Espa%C3%B1ol/FUERA/inicioSesion.php>Inicio de sesión</a>
     </p> ";
     echo "<p>Registrese si no tiene cuenta
     <br>
-    <a href=http://dranimaco.com/Espa%C3%B1ol/FUERA/Registro.php>Registro</a>
+    <a href=http://localhost/dranimaco/Espa%C3%B1ol/FUERA/Registro.php>Registro</a>
     <p> ";
-    echo "<img class=denegado-img image-responsive src=../../../../Imagenes/logoDenegado.PNG>";
+    echo "<img class=denegado-img image-responsive src=../../Imagenes/logoDenegado.PNG>";
     echo "</div>";
   }
 

@@ -1,4 +1,3 @@
-
 <?php
 
  session_start();
@@ -8,4 +7,3 @@
  header("location:../FUERA/inicioSesion.php");
 
 ?>
-

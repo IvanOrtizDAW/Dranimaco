@@ -136,8 +136,12 @@ if(isset($_POST['enviar']) && $error==false){
        if($datos==false){
              $act = $conexion->query("UPDATE registrados SET usuario_pass = '$hash', token = '' WHERE usuario_nombre ='$user'");
               if($act){
-                 echo "<div><p class=correcto>Contraseña cambiada, espere 3 segundos...</p></div><br>";
-                 Header("Refresh: 3; URL=InicioSesion.php");
+                 echo "<div><p class=correcto>Cambiando contraseña, espere 4 segundos...</p></div><br>";
+                 echo "<button class=correcto btn btn-success type=button disabled>";
+                  echo "<span class=spinner-border spinner-border-sm role=status aria-hidden=true></span>";
+                  echo "  Cargando...";
+                  echo "</button>";
+                 Header("Refresh: 4; URL=InicioSesion.php");
             }else{
               echo "<p class=error>Error al cambiar contraseña,vuelve a intentarlo</p><br>";
             }

@@ -19,7 +19,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script>
-  <title>Historia de la animacion y modelado 3D</title>
+  <title>Historia de la animación y modelado 3D</title>
 </head>
 
 <body>
@@ -93,7 +93,7 @@
 
     <div class="empezo-animacion">
 
-      <h2>¿Como empezo el modelado 3D?</h2>
+      <h2>¿Cómo empezo el modelado 3D?</h2>
 
       <hr>
 
@@ -185,7 +185,7 @@
 
     <div class="empezo-animacion">
 
-      <h2>¿Como empezo la aniamcion 3D?</h2>
+      <h2>¿Cómo empezo la aniamcion 3D?</h2>
 
       <hr>
 
@@ -303,7 +303,7 @@
           <li><a href="#">Historia</a></li>
           <li><a href="Galeria.php">Galeria</a></li>
           <li><a href="datos.php">Datos</a></li>
-          <li><a href="contacto.php">Contacto</a></li>
+          <li><a href="contacto.php">Contacto/Sugerencia</a></li>
           <li><a href="tutoriales.php">Tutoriales</a></li>
           <li><a href="../../wordpress/tienda">Tienda</a></li>
           <li><a href="cerrarSesion.php">Cerrar Sesion</a></li>
@@ -364,13 +364,13 @@
     echo "<br>";
     echo "<p>Vuelva a iniciar sesión
     <br>
-    <a href=http://dranimaco.com/Espa%C3%B1ol/FUERA/inicioSesion.php>Inicio de sesión</a>
+    <a href=http://localhost/dranimaco/Espa%C3%B1ol/FUERA/inicioSesion.php>Inicio de sesión</a>
     </p> ";
     echo "<p>Registrese si no tiene cuenta
     <br>
-    <a href=http://dranimaco.com/Espa%C3%B1ol/FUERA/Registro.php>Registro</a>
+    <a href=http://localhost/dranimaco/Espa%C3%B1ol/FUERA/Registro.php>Registro</a>
     <p> ";
-    echo "<img class=denegado-img image-responsive src=../../../../Imagenes/logoDenegado.PNG>";
+    echo "<img class=denegado-img image-responsive src=../../Imagenes/logoDenegado.PNG>";
     echo "</div>";
   }
 

@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link rel="stylesheet" href="../../Diseño/CSS/estilosDentroComunes.css" type="text/css" />
+     <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../Diseño/CSS/estilosDentroComunes.css" type="text/css" />
   <link rel="stylesheet" href="../../DISEÑO/CSS/estilosGaleria.css" type="text/css" />
-    <script src="../JAVASCRIPT/JQUERY/jquery-3.5.1.min.js"></script>
-    <link rel="stylesheet" href="../../DISEÑO/Bootstrap/css/bootstrap.css" />
-    <link
-      type="text/javascript"
-      property='stylesheet'
-      href="../../DISEÑO/Bootstrap/js/bootstrap.min.js"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link rel="icon" type="image/png" href="../../Imagenes/logo2.png" />
+  <script src="../../Scripts/JQUERY/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="../../DISEÑO/Bootstrap/css/bootstrap.css" />
+  <link type="text/javascript"  property='stylesheet' href="../../DISEÑO/Bootstrap/js/bootstrap.min.js" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="icon" type="image/png" href="../../Imagenes/logo2.png" />
     <title>Page 3 of the gallery of images of animation and 3D modeling</title>
   </head>
   <body>
@@ -55,7 +47,7 @@
             <a href="contacto.php"><i class="fas fa-phone"></i> Contact/Suggestion</a>
           </li>
         <li class="menu">
-            <a href="tutoriales.php"><i class="fas fa-play-circle"></i> Tutorials <i class="fas fa-arrow-circle-down"></i></a>
+            <a href="tutoriales.php"><i class="fas fa-play-circle"></i> Tutorials </a><i class="fas fa-arrow-circle-down"></i>
              <ul >
                <li class="menu2">
                  <a href="basico.php"><i class="fas fa-play-circle"></i> Basic</a>
@@ -85,9 +77,9 @@
             /></a>
           </li>
 
-          <li class="hamburgesa">
-            <a href="#"><i class="fas fa-bars"></i></a>
-          </li>
+           <li class="hamburgesa">
+          <a href="#"><i class="fas fa-bars"></i></a>
+        </li>
         </ul>
       </nav>
 
@@ -197,17 +189,17 @@
 
   }else{
     echo "<div class=denegado>";
-    echo "<h1>Acceso denegado</h1>";
+    echo "<h1>Access denied</h1>";
     echo "<br>";
-    echo "<p>Vuelva a iniciar sesión
+    echo "<p>Log in again
     <br>
-    <a href=http://dranimaco.com/Ingles/FUERA/inicioSesion.php>Inicio de sesión</a>
+    <a href=http://localhost/dranimaco/Ingles/FUERA/inicioSesion.php>Login</a>
     </p> ";
-    echo "<p>Registrese si no tiene cuenta
+    echo "<p>Register if you don't have an account
     <br>
-    <a href=http://dranimaco.com/Ingles/FUERA/Registro.php>Registro</a>
+    <a href=http://localhost/dranimaco/Ingles/FUERA/Registro.php>Registry</a>
     <p> ";
-    echo "<img class=denegado-img image-responsive src=../../../../Imagenes/logoDenegado.PNG>";
+    echo "<img class=denegado-img image-responsive src=../../Imagenes/logoDenegado.PNG>";
     echo "</div>";
   }
 

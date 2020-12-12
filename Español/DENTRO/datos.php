@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
@@ -36,7 +36,7 @@
   <header>
     <nav class="menu-navegacion">
       <ul>
-        <img src="../../Imagenes/logo.PNG" alt="logo de Dranimaco" />
+        <li><img src="../../Imagenes/logo.PNG" alt="logo de Dranimaco" /></li>
         <li class="logo">DRANIMACO</li>
 
         <?php
@@ -52,14 +52,14 @@
         <li class="menu"><a href="historia.php"> <i class="fas fa-book"></i> Historia</a></li>
         <li class="menu"><a href="Galeria.php"> <i class="fas fa-camera-retro"></i> Galeria</a></li>
         <li class="menu">
-          <a class="active href=" #"><i class="fas fa-globe-europe"></i> Datos</a>
+          <a class="active" href="#"><i class="fas fa-globe-europe"></i> Datos</a>
         </li>
         <li class="menu">
           <a href="contacto.php"><i class="fas fa-phone"></i> Contacto/Sugerencia</a>
         </li>
         <li class="menu">
-          <a href="tutoriales.php"><i class="fas fa-play-circle"></i> Tutoriales <i
-              class="fas fa-arrow-circle-down"></i></a>
+          <a href="tutoriales.php"><i class="fas fa-play-circle"></i> Tutoriales </a><i
+              class="fas fa-arrow-circle-down"></i>
           <ul>
             <li class="menu2">
               <a href="basico.php"><i class="fas fa-play-circle"></i> Basico</a>
@@ -79,7 +79,7 @@
           <a href="cerrarSesion.php"><i class="far fa-times-circle"></i> Cerrar sesion</a>
         </li>
         <li class="menu"><a href="../../Ingles/DENTRO/datos.php"><img class="imagen-idioma"
-              src="../../Imagenes/Ingles.png" alt="" width="5px" height="10px"></a></li>
+              src="../../Imagenes/Ingles.png" alt=""></a></li>
         <li class="hamburgesa">
           <a href="#"><i class="fas fa-bars"></i></a>
         </li>
@@ -102,7 +102,7 @@
         y tambien queremos mejorar esta pagina con un mapa interactivo y mas detalles.</p>
       <br>
       <h4>Top 5 de paises en compras de productos de aniamción 3D</h4>
-      <div id="tablas">
+      <div class="tablas">
         <table>
           <thead>
             <tr>
@@ -154,19 +154,19 @@
           <div class="col-md-4">
             <div class="tab-content">
               <div class="tab-pane fade show active" id="panel1">
-                <img src="../../Imagenes/Tienda/productos/Animacion 3D/Animales/Untitled Project (5).gif" alt="">
+                <img src="../../Imagenes/Tienda/productos/Animacion_3D/Animales/mosasaurio.gif" alt="">
               </div>
               <div class="tab-pane fade" id="panel2">
-                <img src="../../Imagenes/Tienda/productos/Animacion 3D/Comida & Bebida/pizza.gif" alt="">
+                <img src="../../Imagenes/Tienda/productos/Animacion_3D/Comida_&_Bebida/pizza.gif" alt="">
               </div>
               <div class="tab-pane fade" id="panel3">
-                <img src="../../Imagenes/Tienda/productos/Animacion 3D/Animales/Untitled Project (5).gif" alt="">
+                <img src="../../Imagenes/Tienda/productos/Animacion_3D/Animales/mosasaurio.gif" alt="">
               </div>
               <div class="tab-pane fade" id="panel4">
-                <img src="../../Imagenes/Tienda/productos/Animacion 3D/Comida & Bebida/pizza.gif" alt="">
+                <img src="../../Imagenes/Tienda/productos/Animacion_3D/Comida_&_Bebida/pizza.gif" alt="">
               </div>
               <div class="tab-pane fade" id="panel5">
-                <img src="../../Imagenes/Tienda/productos/Animacion 3D/Naturaleza/Untitled Project (6).gif" alt="">
+                <img src="../../Imagenes/Tienda/productos/Animacion_3D/Naturaleza/fogata.gif" alt="">
               </div>
             </div>
           </div>
@@ -174,7 +174,7 @@
       </div>
       <br>
       <h4>Producto mas vendido de cada pais de modelado 3D</h4>
-      <div id="tablas">
+      <div class="tablas">
         <table>
           <thead>
             <tr>
@@ -227,19 +227,19 @@
           <div class="col-md-4">
             <div class="tab-content">
               <div class="tab-pane fade show active" id="panel6">
-                <img src="../../Imagenes/Tienda/productos/Modelado 3D/Comida & bebida/burger.PNG" alt="">
+                <img src="../../Imagenes/Tienda/productos/Modelado_3D/Comida_&_bebida/burger.PNG" alt="">
               </div>
               <div class="tab-pane fade" id="panel7">
-                <img src="../../Imagenes/Tienda/productos/Modelado 3D/Naturaleza/casa.PNG" alt="">
+                <img src="../../Imagenes/Tienda/productos/Modelado_3D/Naturaleza/casa.PNG" alt="">
               </div>
               <div class="tab-pane fade" id="panel8">
-                <img src="../../Imagenes/Tienda/productos/Modelado 3D/Comida & bebida/burger.PNG" alt="">
+                <img src="../../Imagenes/Tienda/productos/Modelado_3D/Comida_&_bebida/burger.PNG" alt="">
               </div>
               <div class="tab-pane fade" id="panel9">
-                <img src="../../Imagenes/Tienda/productos/Modelado 3D/Animales/camaleon.PNG" alt="">
+                <img src="../../Imagenes/Tienda/productos/Modelado_3D/Animales/camaleon.PNG" alt="">
               </div>
               <div class="tab-pane fade" id="panel10">
-                <img src="../../Imagenes/Tienda/productos/Modelado 3D/Vehiculos/barco.PNG" alt="">
+                <img src="../../Imagenes/Tienda/productos/Modelado_3D/Vehiculos/barco.PNG" alt="">
               </div>
             </div>
           </div>
@@ -262,7 +262,7 @@
           <li><a href="historia.php">Historia</a></li>
           <li><a href="Galeria.php">Galeria</a></li>
           <li><a href="#">Datos</a></li>
-          <li><a href="contacto.php">Contacto</a></li>
+          <li><a href="contacto.php">Contacto/Sugerencia</a></li>
           <li><a href="tutoriales.php">Tutoriales</a></li>
           <li><a href="../../wordpress/tienda">Tienda</a></li>
           <li><a href="cerrarSesion.php">Cerrar Sesion</a></li>
@@ -287,7 +287,7 @@
     </section>
 
     <!-- Footer social -->
-    <section class="ft-social">
+    <div class="ft-social">
       <ul class="ft-social-list">
         <li>
           <a href="#"><i class="fab fa-facebook"></i></a>
@@ -302,16 +302,16 @@
           <a href="#"><i class="fab fa-youtube"></i></a>
         </li>
       </ul>
-    </section>
+  </div>
 
     <!-- Footer legal -->
-    <section class="ft-legal">
+    <div class="ft-legal">
       <ul class="ft-legal-list">
         <li><a href="terminosCondiciones.html" target="_blank">Terminos &amp; Condiciones</a></li>
         <li><a href="politicaPrivacidad.html" target="_blank">Politica de privacidad</a></li>
         <li>&copy; 2020 Copyright</li>
       </ul>
-    </section>
+  </div>
   </footer>
   <script src="../../Scripts/menuHamburgesa.js"></script>
   <?php 
@@ -322,13 +322,13 @@
     echo "<br>";
     echo "<p>Vuelva a iniciar sesión
     <br>
-    <a href=http://dranimaco.com/Espa%C3%B1ol/FUERA/inicioSesion.php>Inicio de sesión</a>
+    <a href=http://localhost/dranimaco/Espa%C3%B1ol/FUERA/inicioSesion.php>Inicio de sesión</a>
     </p> ";
     echo "<p>Registrese si no tiene cuenta
     <br>
-    <a href=http://dranimaco.com/Espa%C3%B1ol/FUERA/Registro.php>Registro</a>
+    <a href=http://localhost/dranimaco/Espa%C3%B1ol/FUERA/Registro.php>Registro</a>
     <p> ";
-    echo "<img class=denegado-img image-responsive src=../../../../Imagenes/logoDenegado.PNG>";
+    echo "<img class=denegado-img image-responsive src=../../Imagenes/logoDenegado.PNG>";
     echo "</div>";
   }
 
