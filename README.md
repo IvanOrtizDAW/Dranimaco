@@ -1,4 +1,4 @@
-Descarga el proyecto y lo instalas en un servidor web lcoal y llamas a la carpeta Dranimaco
+Descarga el repositorio y lo instalas en un servidor web local y llamas a la carpeta Dranimaco, una vez ahi puedes entrar desde Español/FUERA/InicioSesion.php o Ingles/FUERA/InicioSesion.php. Acuerdate de importar las base de datos (carpeta BD) para que funcione correctamente.
 
 # Dranimaco
 
