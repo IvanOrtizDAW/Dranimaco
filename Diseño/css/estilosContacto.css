@@ -1,0 +1,58 @@
+/**--------------------------CONTACTO PAGINA WEB--------------------*/
+
+/**boton para mostrar un formualrio*/
+.list-group-item {
+  background-color: #00adb5;
+  color: white;
+  text-align: center;
+  margin: 3px;
+}
+
+/**efecto hover para el boton para mostrar un formualrio*/
+.list-group-item:hover {
+  background-color: #222831;
+  color: white;
+  text-align: center;
+}
+
+/**efecto active para el boton para mostrar un formualrio*/
+.list-group-item.active {
+  background-color: #00adb5;
+  color: white;
+  text-align: center;
+}
+
+/**div principal del cuerpo de la pagina de contacto*/
+.contact-section {
+  background: url(../../Imagenes/fondo-contacto.jpg) no-repeat center;
+  background-size: cover;
+  padding: 40px 0;
+}
+
+/**h1 y h3 del div principal del cuerpo de la pagina de contacto*/
+.contact-section h1,
+h3 {
+  text-align: center;
+  color: #ddd;
+  text-shadow: #ddd 0 0 10px;
+}
+
+/**div de las redes sociales*/
+.redes {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.25rem;
+}
+
+/**trazo al titulo de redes sociales*/
+.redes-sociales {
+  -webkit-text-stroke: 1px black;
+}
+
+/**iconos del div de las redes sociales*/
+.redes i {
+  color: #00adb5;
+  margin: 1.25rem;
+  font-size: 3.5rem;
+  text-align: center;
+}

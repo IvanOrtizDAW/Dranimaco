@@ -1,0 +1,45 @@
+/**div principal de la galeria donde van las imagenes*/
+.galeria {
+  text-align: center;
+  background-color: white;
+}
+
+/**h2 del div principal de la galeria*/
+.galeria h2 {
+  text-align: center;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  color: #00adb5;
+  text-shadow: #00adb5 0 0 4px;
+}
+
+/**hr de dabjo del h2 del div de la galeria*/
+.galeria hr {
+  background-color: #222831;
+  height: 3px;
+  width: 5vw;
+  margin: 20px auto;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+
+/**imagenes del div principal de la galeria*/
+.galeria img {
+  border: black solid 3px;
+  border-image-slice: 4.5 fill;
+  border-image-repeat: round;
+  border-image-width: 17px;
+  margin: 10px;
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  padding: 5px;
+  text-align: justify;
+}
+
+/**efeco hover de las imagenes del div principal de la galeria*/
+.galeria img:hover {
+  filter: saturate(300%);
+}
