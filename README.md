@@ -1,3 +1,5 @@
+Descarga el proyecto y lo instalas en un servidor web lcoal y llamas a la carpeta Dranimaco
+
 # Dranimaco
 
 La animacion y modelado 3D esta de moda, no sólo se utiliza en el cine, el sector audiovisual o los videojuegos, estos son solo algunos ejemplos de su uso. Su aplicación va mucho más allá del área de la comunicación y ya la usan sectores como el de la construcción o la medicina. Por ejemplo, para muchos arquitectos, la Animación 3D se ha convertido en una herramienta indispensable en su día a día porque gracias a ella pueden elaborar representaciones muy realistas y realizar modificaciones antes de colocar una sola piedra. En el campo de la medicina, los videos creados con Animación 3D permiten presentar investigaciones o avances científicos de una manera clara y muy visual.
